@@ -1,101 +1,128 @@
-import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
+import PageHeader from "./components/PageHeader";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Head>
+        <title>Cabinet Mériéux | Avocat en Droit Fiscal & des Affaires</title>
+        <meta name="description" content="Cabinet Mériéux - Avocat spécialisé en droit fiscal, droit des affaires et transactions immobilières à La Rochette (77)." />
+        <meta name="keywords" content="avocat fiscaliste, droit fiscal, droit des affaires, transactions immobilières, avocat La Rochette" />
+        <meta name="author" content="Cabinet Mériéux" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* Open Graph pour Facebook & LinkedIn */}
+        <meta property="og:title" content="Cabinet Mériéux | Avocat en Droit Fiscal & des Affaires" />
+        <meta property="og:description" content="Maître Jean-Claude MÉRIEUX vous accompagne en droit fiscal, droit des affaires et transactions immobilières." />
+        <meta property="og:image" content="/images/cabinet-merieux.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cabinet-merieux.fr" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cabinet Mériéux | Avocat en Droit Fiscal & des Affaires" />
+        <meta name="twitter:description" content="Expertise en droit fiscal, droit des affaires et transactions immobilières." />
+        <meta name="twitter:image" content="/images/cabinet-merieux.jpg" />
+      </Head>
+
+      {/* Header avec l’image du cabinet */}
+      <PageHeader
+        title="Cabinet Mérieux"
+        subtitle="Expertise en droit fiscal, droit des affaires et transactions immobilières."
+        imageSrc="/header/accueil.jpg"
+        clientImageSrc="/jeanClaude.png"
+      />
+
+      <main className="container mx-auto px-6 py-12 space-y-16">
+        
+        {/* Section Expertise */}
+        <section className="text-center">
+          <h2 className="text-4xl font-bold text-primary">Une expertise à votre service</h2>
+          <p className="mt-6 max-w-3xl mx-auto text-gray-700 leading-relaxed">
+            Le <strong>Cabinet Mériéux</strong> vous accompagne dans toutes vos démarches juridiques, fiscales et immobilières, avec une approche 
+            personnalisée et rigoureuse. Nous défendons vos intérêts avec <strong>transparence, réactivité et professionnalisme</strong>.
+          </p>
+        </section>
+
+        {/* Services */}
+        <section>
+          <h2 className="text-4xl font-bold text-primary text-center mb-12">Nos Prestations</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Droit Fiscal */}
+            <div className="bg-white shadow-md border border-gray-200 p-8 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+              {/* <img src="/icons/fiscalite.svg" alt="Droit Fiscal" className="w-16 mx-auto mb-4" /> */}
+              <h3 className="text-2xl font-semibold text-primary">Droit Fiscal</h3>
+              <p className="mt-3 text-gray-600">
+                Optimisation fiscale, déclarations et contentieux fiscaux pour entreprises et particuliers.
+              </p>
+              <Link href="/droit-fiscal" className="mt-4 inline-block text-secondary hover:text-red-600 transition">
+                En savoir plus →
+              </Link>
+            </div>
+
+            {/* Droit des Affaires */}
+            <div className="bg-white shadow-md border border-gray-200 p-8 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+              {/* <img src="/icons/affaires.svg" alt="Droit des Affaires" className="w-16 mx-auto mb-4" /> */}
+              <h3 className="text-2xl font-semibold text-primary">Droit des Affaires</h3>
+              <p className="mt-3 text-gray-600">
+                Accompagnement dans la création d’entreprise, contrats et litiges commerciaux.
+              </p>
+              <Link href="/droit-affaires" className="mt-4 inline-block text-secondary hover:text-red-600 transition">
+                En savoir plus →
+              </Link>
+            </div>
+
+            {/* Transactions Immobilières */}
+            <div className="bg-white shadow-md border border-gray-200 p-8 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+              {/* <img src="/icons/immobilier.svg" alt="Transactions Immobilières" className="w-16 mx-auto mb-4" /> */}
+              <h3 className="text-2xl font-semibold text-primary">Transactions Immobilières</h3>
+              <p className="mt-3 text-gray-600">
+                Sécurisation des transactions immobilières et accompagnement juridique.
+              </p>
+              <Link href="/immobilier" className="mt-4 inline-block text-secondary hover:text-red-600 transition">
+                En savoir plus →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Séparateur */}
+        <div className="border-t border-gray-300"></div>
+
+        {/* Pourquoi choisir le cabinet ? */}
+        <section className="text-center">
+          <h2 className="text-4xl font-bold text-primary">Pourquoi choisir le Cabinet Mérieux ?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
+              <h3 className="text-xl font-semibold text-secondary">🔹 Transparence</h3>
+              <p className="mt-2">
+                Des conseils clairs et honnêtes, adaptés à vos besoins.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
+              <h3 className="text-xl font-semibold text-secondary">🔹 Réactivité</h3>
+              <p className="mt-2">
+                Un suivi rigoureux et des réponses rapides à vos interrogations.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
+              <h3 className="text-xl font-semibold text-secondary">🔹 Expertise</h3>
+              <p className="mt-2">
+                Une approche juridique stratégique et une parfaite maîtrise du droit fiscal et des affaires.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA vers Contact */}
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-primary mb-4">Besoin d’un conseil juridique ?</h2>
+          <p className="text-gray-700 mb-6">Nous sommes à votre écoute pour vous accompagner dans toutes vos démarches.</p>
+          <Link href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-red-700 hover:scale-105 transition transform">
+            Contactez-nous
+          </Link>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
