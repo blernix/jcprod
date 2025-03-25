@@ -1,33 +1,43 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 
+
+
+export const metadata: Metadata = {
+  title: "Droit des affaires | Cabinet Mérieux",
+  description: "Le Cabinet Mérieux accompagne les entreprises en droit des affaires, droit des sociétés et droit commercial.",
+  keywords: [
+    "droit des affaires",
+    "avocat en entreprise",
+    "droit commercial",
+    "droit des sociétés",
+    "baux commerciaux",
+    "contrats d'affaires"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Droit des affaires | Cabinet Mérieux",
+    description: "Conseil et assistance en droit des affaires : droit des sociétés, droit commercial, négociation et contrats.",
+    url: "https://cabinet-merieux.fr/droit-affaires",
+    type: "article",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Droit des affaires | Cabinet Mérieux",
+    description: "Le Cabinet Mérieux accompagne entreprises et entrepreneurs en droit des affaires, droit des sociétés et droit commercial.",
+    images: ["/logometa.jpeg"],
+  },
+};
 export default function DroitAffairesPage() {
   return (
     <>
-      <Head>
-        <title>Droit des Affaires | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet Mériéux accompagne les entreprises en droit des affaires, droit des sociétés et droit commercial." />
-        <meta name="keywords" content="droit des affaires, avocat en entreprise, droit commercial, droit des sociétés, baux commerciaux, contrats d'affaires" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour Facebook & LinkedIn */}
-        <meta property="og:title" content="Droit des Affaires | Cabinet Mériéux" />
-        <meta property="og:description" content="Conseil et assistance en droit des affaires : droit des sociétés, droit commercial, négociation et contrats." />
-        <meta property="og:image" content="/images/droit-affaires.jpg" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-affaires" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Droit des Affaires | Cabinet Mériéux" />
-        <meta name="twitter:description" content="Le Cabinet Mériéux accompagne entreprises et entrepreneurs en droit des affaires, droit des sociétés et droit commercial." />
-        <meta name="twitter:image" content="/images/droit-affaires.jpg" />
-      </Head>
+  
 
        <PageHeader
                     title="Droit des Affaires"
-                    subtitle="Bénéficiez de l'expertise du Cabinet Mériéux"
+                    subtitle="Bénéficiez de l'expertise du Cabinet Mérieux"
                     imageSrc="/header/droit-affaire.jpg"
                   />
 
@@ -47,7 +57,7 @@ export default function DroitAffairesPage() {
 
         {/* Services en Droit des Affaires */}
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-center">Nos Domaines d&rsquo;Intervention</h2>
+          <h2 className="text-2xl font-semibold text-primary text-center">Domaines d&rsquo;Intervention</h2>
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Droit des Sociétés */}
@@ -73,7 +83,7 @@ export default function DroitAffairesPage() {
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
           <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
-            Contactez-nous pour une consultation
+            Contactez-moi
           </a>
         </div>
       </main>

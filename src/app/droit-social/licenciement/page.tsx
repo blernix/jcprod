@@ -1,27 +1,41 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import PageHeader from "@/app/components/PageHeader";
 
+
+export const metadata: Metadata = {
+  title: "Licenciement | Cabinet Mérieux",
+  description: "Le Cabinet Mérieux vous accompagne dans les procédures de licenciement : inaptitude physique, reclassement, droit du travail.",
+  keywords: [
+    "licenciement",
+    "avocat licenciement",
+    "droit social",
+    "licenciement économique",
+    "licenciement pour faute",
+    "reclassement",
+    "droit du travail"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Licenciement | Cabinet Mérieux",
+    description: "Comprendre les règles du licenciement et les obligations légales des employeurs.",
+    url: "https://cabinet-merieux.fr/droit-social/licenciement",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Licenciement | Cabinet Mérieux",
+    description: "Comprendre les règles du licenciement et les obligations légales des employeurs.",
+  },
+};
 export default function LicenciementPage() {
   return (
     <>
-      <Head>
-        <title>Licenciement | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet Mériéux vous accompagne dans les procédures de licenciement : inaptitude physique, reclassement, droit du travail." />
-        <meta name="keywords" content="licenciement, avocat licenciement, droit social, licenciement économique, licenciement pour faute, reclassement, droit du travail" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Licenciement | Cabinet Mériéux" />
-        <meta property="og:description" content="Comprendre les règles du licenciement et les obligations légales des employeurs." />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-social/licenciement" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+     
 
       {/* Image de la page */}
       <PageHeader
         title="Licenciement"
-        subtitle="Faites-vous accompagner par l&rsquo;expertise du Cabinet Mériéux"
+        subtitle="Faites-vous accompagner par l&rsquo;expertise du Cabinet Mérieux"
         imageSrc="/header/licenciement.jpg"
       />
 
@@ -79,7 +93,7 @@ export default function LicenciementPage() {
           <p className="mt-4">
             Un salarié peut être déclaré <strong>inapte</strong> par la médecine du travail lorsqu&rsquo;il ne peut plus occuper son poste. Ce diagnostic doit être établi après :
           </p>
-          <ul className="mt-4 list-disc list-inside text-center">
+          <ul className="mt-4 list-none list-inside text-center">
             <li>📌 Un <strong>examen médical</strong> par le médecin du travail.</li>
             <li>📌 Une <strong>analyse des conditions de travail</strong> du salarié.</li>
             <li>📌 Une <strong>visite de pré-reprise</strong> (si applicable).</li>
@@ -95,7 +109,7 @@ export default function LicenciementPage() {
           <p className="mt-4">
             Lors d&rsquo;un licenciement, l&rsquo;employeur doit impérativement respecter <strong>plusieurs étapes</strong> pour garantir la conformité de la procédure :
           </p>
-          <ul className="mt-4 list-disc list-inside text-center">
+          <ul className="mt-4 list-none list-inside text-center">
             <li>📌 <strong>Convocation</strong> à un entretien préalable par lettre recommandée.</li>
             <li>📌 <strong>Entretien avec le salarié</strong> pour exposer les raisons du licenciement.</li>
             <li>📌 <strong>Délai de réflexion</strong> après l’entretien avant la prise de décision.</li>

@@ -1,26 +1,35 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import PageHeader from "@/app/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Droit commercial & économique | Cabinet Mérieux",
+  description: "Le Cabinet de Maître Jean-Claude Mérieux accompagne les entreprises en droit commercial et économique : contrats, négociations, propriété intellectuelle, baux commerciaux.",
+  keywords: [
+    "droit commercial",
+    "droit économique",
+    "avocat entreprise",
+    "contrats commerciaux",
+    "baux commerciaux",
+    "propriété intellectuelle",
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Droit commercial & économique | Cabinet Mérieux",
+    description: "Maître Jean-Claude Mérieux conseille les entreprises en droit commercial et économique : contrats, négociations, baux commerciaux, distribution, concurrence.",
+    url: "https://cabinet-merieux.fr/droit-affaires/commercial",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Droit commercial & économique | Cabinet Mérieux",
+    description: "Le Cabinet Mérieux accompagne les entreprises en droit commercial et économique.",
+  },
+};
 
 export default function DroitCommercialPage() {
   return (
     <>
-      <Head>
-        <title>Droit Commercial & Économique | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet de Maître Jean-Claude MÉRIEUX accompagne les entreprises en droit commercial et économique : contrats, négociations, propriété intellectuelle, baux commerciaux." />
-        <meta name="keywords" content="droit commercial, droit économique, avocat entreprise, contrats commerciaux, baux commerciaux, propriété intellectuelle" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour réseaux sociaux */}
-        <meta property="og:title" content="Droit Commercial & Économique | Cabinet Mériéux" />
-        <meta property="og:description" content="Maître Jean-Claude MÉRIEUX conseille les entreprises en droit commercial et économique : contrats, négociations, baux commerciaux, distribution, concurrence." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-affaires/commercial" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Droit Commercial & Économique | Cabinet Mériéux" />
-        <meta name="twitter:description" content="Le Cabinet Mériéux accompagne les entreprises en droit commercial et économique." />
-      </Head>
+     
        <PageHeader
                     title="Droit Commercial & Économique"
                     subtitle="Prenez des décisions éclairées avec l'expertise du Cabinet Mérieux"

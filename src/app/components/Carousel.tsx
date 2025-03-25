@@ -8,10 +8,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const images = [
-  "/immo/sejour1.jpg",
-  "/immo/sejour2.jpg",
-  "/immo/vue1.jpg",
-  "/immo/vue2.jpg"
+  "/immo/allee.jpg",
+  "/immo/salon.jpg",
+  "/immo/salon2.jpg",
+  "/immo/cuisine.jpg",
+  "/immo/chambre1.jpg",
+  "/immo/chambre2.jpg",
+  "/immo/salledebain.jpg",
+  "/immo/jardin1.jpg",
+  "/immo/jardin2.jpg"
 ];
 
 export default function Carousel() {
@@ -27,13 +32,14 @@ export default function Carousel() {
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <Image
-              src={src}
-              alt={`Image ${index + 1}`}
-              width={800}
-              height={500}
-              className="w-full h-auto object-cover rounded-lg"
-            />
+            <div className="relative w-full h-[500px]">
+              <Image
+                src={src}
+                alt={`Image ${index + 1}`}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

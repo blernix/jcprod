@@ -1,34 +1,43 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Droit fiscal | Cabinet Mérieux",
+  description: "Le Cabinet Mérieux vous accompagne en droit fiscal : fiscalité des entreprises, patrimoniale, immobilière, TVA et contentieux fiscaux.",
+  keywords: [
+    "droit fiscal",
+    "avocat fiscaliste",
+    "fiscalité des entreprises",
+    "fiscalité patrimoniale",
+    "fiscalité immobilière",
+    "contentieux fiscaux"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Droit fiscal | Cabinet Mérieux",
+    description: "Expertise en fiscalité des entreprises, patrimoine, immobilier et contentieux fiscaux.",
+    url: "https://cabinet-merieux.fr/droit-fiscal",
+    type: "article",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Droit fiscal | Cabinet Mérieux",
+    description: "Accompagnement en droit fiscal : entreprises, patrimoine, immobilier et litiges fiscaux.",
+    images: ["/logometa.jpeg"],
+  },
+};
 
 export default function DroitFiscalPage() {
   return (
     <>
-      <Head>
-        <title>Droit Fiscal | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet Mériéux vous accompagne en droit fiscal : fiscalité des entreprises, patrimoniale, immobilière, TVA et contentieux fiscaux." />
-        <meta name="keywords" content="droit fiscal, avocat fiscaliste, fiscalité des entreprises, fiscalité patrimoniale, fiscalité immobilière, contentieux fiscaux" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour Facebook & LinkedIn */}
-        <meta property="og:title" content="Droit Fiscal | Cabinet Mériéux" />
-        <meta property="og:description" content="Expertise en fiscalité des entreprises, patrimoine, immobilier et contentieux fiscaux." />
-        <meta property="og:image" content="/images/droit-fiscal.jpg" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-fiscal" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Droit Fiscal | Cabinet Mériéux" />
-        <meta name="twitter:description" content="Accompagnement en droit fiscal : entreprises, patrimoine, immobilier et litiges fiscaux." />
-        <meta name="twitter:image" content="/images/droit-fiscal.jpg" />
-      </Head>
+   
 
        {/* Header personnalisé */}
        <PageHeader
         title="Droit Fiscal"
-        subtitle="Maîtrisez la fiscalité avec l&rsquo;expertise du Cabinet Mériéux"
+        subtitle="Maîtrisez la fiscalité avec l&rsquo;expertise du Cabinet Mérieux"
         imageSrc="/header/fiscalite.jpg"
       />
 

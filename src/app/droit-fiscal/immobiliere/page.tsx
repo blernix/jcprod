@@ -1,27 +1,42 @@
-import Head from "next/head";
+import { Metadata } from "next";
+import PageHeader from "@/app/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Fiscalité immobilière | Cabinet Mérieux",
+  description: "Le Cabinet Mérieux accompagne particuliers et entreprises en fiscalité immobilière : acquisitions, cessions, optimisation fiscale et structuration d’investissement.",
+  keywords: [
+    "fiscalité immobilière",
+    "avocat fiscaliste",
+    "acquisition immobilière",
+    "cession immobilière",
+    "SCI",
+    "optimisation fiscale"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Fiscalité immobilière | Cabinet Mérieux",
+    description: "Accompagnement en structuration fiscale pour l'immobilier, gestion des acquisitions et cessions, et optimisation des investissements immobiliers.",
+    url: "https://cabinet-merieux.fr/droit-fiscal/immobiliere",
+    type: "article",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fiscalité immobilière | Cabinet Mérieux",
+    description: "Conseil en fiscalité immobilière : gestion des acquisitions, cessions et structuration d'investissement.",
+    images: ["/logometa.jpeg"],
+  },
+};
 
 export default function FiscaliteImmobilierePage() {
   return (
     <>
-      <Head>
-        <title>Fiscalité Immobilière | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet Mériéux accompagne particuliers et entreprises en fiscalité immobilière : acquisitions, cessions, optimisation fiscale et structuration d’investissement." />
-        <meta name="keywords" content="fiscalité immobilière, avocat fiscaliste, acquisition immobilière, cession immobilière, SCI, optimisation fiscale" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour Facebook & LinkedIn */}
-        <meta property="og:title" content="Fiscalité Immobilière | Cabinet Mériéux" />
-        <meta property="og:description" content="Accompagnement en structuration fiscale pour l'immobilier, gestion des acquisitions et cessions, et optimisation des investissements immobiliers." />
-        <meta property="og:image" content="/images/fiscalite-immobiliere.jpg" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-fiscal/immobiliere" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Fiscalité Immobilière | Cabinet Mériéux" />
-        <meta name="twitter:description" content="Conseil en fiscalité immobilière : gestion des acquisitions, cessions et structuration d'investissement." />
-        <meta name="twitter:image" content="/images/fiscalite-immobiliere.jpg" />
-      </Head>
+   {/* Header personnalisé */}
+        <PageHeader
+         title="Fiscalité Immobilière"
+         subtitle="Maîtrisez la fiscalité immobilière avec l'expertise du Cabinet Mérieux"
+         imageSrc="/header/fiscalite-entreprise.jpg"
+       />
 
       <main className="container mx-auto p-6">
         {/* En-tête */}
@@ -37,13 +52,13 @@ export default function FiscaliteImmobilierePage() {
 
         {/* Services en Fiscalité Immobilière */}
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-center">Nos Services en Fiscalité Immobilière</h2>
+          <h2 className="text-2xl font-semibold text-primary text-center">Services en Fiscalité Immobilière</h2>
 
           {/* Structuration et Optimisation Fiscale des Investissements */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Structuration et Optimisation Fiscale des Investissements</h3>
             <p className="mt-2 text-gray-700">
-              Nous vous accompagnons dans la structuration de vos investissements immobiliers pour optimiser leur rentabilité et minimiser les charges fiscales.
+              Le cabinet Mérieux vous accompagne dans la structuration de vos investissements immobiliers pour optimiser leur rentabilité et minimiser les charges fiscales.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Création de SCI et sociétés holding immobilières</li>
@@ -57,7 +72,7 @@ export default function FiscaliteImmobilierePage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Fiscalité des Acquisitions et Cessions Immobilières</h3>
             <p className="mt-2 text-gray-700">
-              Nos experts vous conseillent sur la fiscalité applicable lors des transactions immobilières afin d&rsquo;optimiser vos investissements.
+              Des conseils d&rsquo;experts sur la fiscalité applicable lors des transactions immobilières afin d&rsquo;optimiser vos investissements.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Analyse fiscale des acquisitions et cessions d&rsquo;immeubles</li>
@@ -71,7 +86,7 @@ export default function FiscaliteImmobilierePage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Régime Fiscal des Revenus Locatifs et Fiscalité Internationale</h3>
             <p className="mt-2 text-gray-700">
-              Nous vous assistons dans la gestion fiscale de vos revenus locatifs et des obligations fiscales internationales.
+              Une assistance dans la gestion fiscale de vos revenus locatifs et des obligations fiscales internationales.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Choix du régime fiscal pour les revenus locatifs</li>
@@ -85,7 +100,7 @@ export default function FiscaliteImmobilierePage() {
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
           <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
-            Contactez-nous pour une consultation
+            Contactez-moi
           </a>
         </div>
       </main>

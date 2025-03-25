@@ -1,34 +1,42 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import Image from "next/image";
 
+
+export const metadata: Metadata = {
+  title: "À propos | Cabinet Mérieux – Avocat en droit fiscal",
+  description: "Découvrez le parcours de Maître Jean-Claude Mérieux, avocat spécialisé en droit fiscal, droit des affaires et transactions immobilières.",
+  keywords: [
+    "avocat fiscaliste",
+    "droit fiscal",
+    "avocat Jean-Claude Mérieux",
+    "droit des affaires",
+    "avocat La Rochette"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "À propos | Cabinet Mérieux – Avocat en droit fiscal",
+    description: "Découvrez le parcours et l'expertise de Maître Jean-Claude Mérieux, avocat en droit fiscal et des affaires.",
+    url: "https://cabinet-merieux.fr/a-propos",
+    type: "article",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "À propos | Cabinet Mérieux – Avocat en droit fiscal",
+    description: "Parcours et expertise de Maître Jean-Claude Mérieux, avocat spécialisé en droit fiscal et en droit des affaires.",
+    images: ["/logometa.jpeg"],
+  },
+};
 export default function AboutPage() {
   return (
     <>
-      <Head>
-        <title>À Propos | Cabinet Mériéux - Avocat en Droit Fiscal</title>
-        <meta name="description" content="Découvrez le parcours de Maître Jean-Claude MÉRIEUX, avocat spécialisé en droit fiscal, droit des affaires et transactions immobilières." />
-        <meta name="keywords" content="avocat fiscaliste, droit fiscal, avocat Jean-Claude Mériéux, droit des affaires, avocat La Rochette" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour Facebook & LinkedIn */}
-        <meta property="og:title" content="À Propos | Cabinet Mériéux - Avocat en Droit Fiscal" />
-        <meta property="og:description" content="Découvrez le parcours et l'expertise de Maître Jean-Claude MÉRIEUX, avocat en droit fiscal et des affaires." />
-        <meta property="og:image" content="/images/jean-claude-merieux.jpg" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/a-propos" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="À Propos | Cabinet Mériéux - Avocat en Droit Fiscal" />
-        <meta name="twitter:description" content="Parcours et expertise de Maître Jean-Claude MÉRIEUX, avocat spécialisé en droit fiscal et en droit des affaires." />
-        <meta name="twitter:image" content="/images/jean-claude-merieux.jpg" />
-      </Head>
+  
 
       <main className="container mx-auto p-6">
         {/* Photo de Maître MériéUX */}
 <div className="flex justify-center mt-6">
   <Image
-    src="/photo-profil.jpeg"
+    src="/jeanClaude.jpeg"
     alt="Maître Jean-Claude MÉRIEUX - Avocat en Droit Fiscal"
     width={200}
     height={200}

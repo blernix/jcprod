@@ -2,8 +2,6 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 
-
-
 export default function Navbar() {
   const [isFiscalOpen, setIsFiscalOpen] = useState(false);
   const [isAffairesOpen, setIsAffairesOpen] = useState(false);
@@ -28,6 +26,13 @@ export default function Navbar() {
     clearTimeout(socialTimeout.current as NodeJS.Timeout);
     clearTimeout(immoTimeout.current as NodeJS.Timeout);
     clearTimeout(actuTimeout.current as NodeJS.Timeout);
+
+    // Fermer tous les menus avant d'ouvrir le menu ciblé
+    setIsFiscalOpen(false);
+    setIsAffairesOpen(false);
+    setIsSocialOpen(false);
+    setIsImmoOpen(false);
+    setIsActuOpen(false);
 
     if (menu === "fiscal") setIsFiscalOpen(true);
     else if (menu === "affaires") setIsAffairesOpen(true);
@@ -91,16 +96,19 @@ export default function Navbar() {
 
   return (
     <nav className="bg-primary text-white p-4 shadow-md top-0 left-0 w-full z-10">
-     <div className="container mx-auto flex justify-between items-center">
-    {/* Logo + Nom */}
-    <Link href="/" className="flex items-center space-x-3">
-      {/* <Image src="/logo.png" alt="Logo Cabinet Mérieux" width={40} height={40} priority /> */}
-      <span className="text-lg font-bold">Cabinet Mérieux</span>
-    </Link> 
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo + Nom */}
+        <Link href="/" className="flex items-center space-x-3">
+          <span className="text-lg font-bold">Cabinet Mérieux</span>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 items-center">
-          <li><Link href="/a-propos" className="hover:text-secondary">À Propos</Link></li>
+          <li>
+            <Link href="/a-propos" className="hover:text-secondary">
+              À Propos
+            </Link>
+          </li>
 
           {/* Droit Fiscal */}
           <DropdownMenu
@@ -115,6 +123,8 @@ export default function Navbar() {
               { name: "Fiscalité Immobilière", href: "/droit-fiscal/immobiliere" },
               { name: "Fiscalité Indirecte", href: "/droit-fiscal/indirecte" },
               { name: "Contrôle et Contentieux Fiscaux", href: "/droit-fiscal/contentieux" },
+              { name: "Bilan Patrimonial et successoral", href: "/droit-fiscal/bilan" },
+
             ]}
           />
 
@@ -151,9 +161,7 @@ export default function Navbar() {
             onClose={() => closeMenu("immobilier")}
             label="Immobilier"
             link="/immobilier"
-            items={[
-              { name: "Nos biens en vente", href: "/immobilier" },
-            ]}
+            items={[{ name: "Nos biens en vente", href: "/immobilier" }]}
           />
 
           {/* Actualités */}
@@ -163,13 +171,19 @@ export default function Navbar() {
             onClose={() => closeMenu("actualites")}
             label="Actualités"
             link="/actualites"
-            items={[
-              { name: "Nos articles", href: "/actualites" },
-            ]}
+            items={[{ name: "Nos articles", href: "/actualites" }]}
           />
 
-          <li><Link href="/honoraires" className="hover:text-secondary">Honoraires</Link></li>
-          <li><Link href="/contact" className="hover:text-secondary">Contact</Link></li>
+          <li>
+            <Link href="/honoraires" className="hover:text-secondary">
+              Honoraires
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="hover:text-secondary">
+              Contact
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile Menu Toggle */}
@@ -185,14 +199,78 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-primary p-4">
           <ul className="flex flex-col gap-4">
-            <li><Link href="/a-propos" className="hover:text-secondary">À Propos</Link></li>
-            <li><Link href="/droit-fiscal" className="hover:text-secondary">Droit Fiscal</Link></li>
-            <li><Link href="/droit-affaires" className="hover:text-secondary">Droit des Affaires</Link></li>
-            <li><Link href="/droit-social" className="hover:text-secondary">Droit Social</Link></li>
-            <li><Link href="/immobilier" className="hover:text-secondary">Immobilier</Link></li>
-            <li><Link href="/actualites" className="hover:text-secondary">Actualités</Link></li>
-            <li><Link href="/honoraires" className="hover:text-secondary">Honoraires</Link></li>
-            <li><Link href="/contact" className="hover:text-secondary">Contact</Link></li>
+            <li>
+              <Link
+                href="/a-propos"
+                className="hover:text-secondary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                À Propos
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/droit-fiscal"
+                className="hover:text-secondary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Droit Fiscal
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/droit-affaires"
+                className="hover:text-secondary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Droit des Affaires
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/droit-social"
+                className="hover:text-secondary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Droit Social
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/immobilier"
+                className="hover:text-secondary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Immobilier
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/actualites"
+                className="hover:text-secondary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Actualités
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/honoraires"
+                className="hover:text-secondary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Honoraires
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="hover:text-secondary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       )}

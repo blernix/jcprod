@@ -1,28 +1,37 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import PageHeader from "@/app/components/PageHeader";
 
+
+export const metadata: Metadata = {
+  title: "Contrôle et contentieux fiscaux | Cabinet Mérieux",
+  description: "Le Cabinet Mérieux accompagne les entreprises et les particuliers lors de contrôles fiscaux et les défend en contentieux avec l'administration fiscale.",
+  keywords: [
+    "contrôle fiscal",
+    "contentieux fiscal",
+    "avocat fiscaliste",
+    "redressement fiscal",
+    "défense fiscale",
+    "litiges fiscaux"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Contrôle et contentieux fiscaux | Cabinet Mérieux",
+    description: "Accompagnement en contrôle fiscal et défense en cas de contentieux avec l'administration fiscale.",
+    url: "https://cabinet-merieux.fr/droit-fiscal/contentieux",
+    type: "article",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contrôle et contentieux fiscaux | Cabinet Mérieux",
+    description: "Défense et accompagnement en cas de contrôle fiscal et litiges avec l'administration fiscale.",
+    images: ["/logometa.jpeg"],
+  },
+};
 export default function ContentieuxFiscauxPage() {
   return (
     <>
-      <Head>
-        <title>Contrôle et Contentieux Fiscaux | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet Mériéux accompagne les entreprises et particuliers lors de contrôles fiscaux et les défend en contentieux avec l'administration fiscale." />
-        <meta name="keywords" content="contrôle fiscal, contentieux fiscal, avocat fiscaliste, redressement fiscal, défense fiscale, litiges fiscaux" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour Facebook & LinkedIn */}
-        <meta property="og:title" content="Contrôle et Contentieux Fiscaux | Cabinet Mériéux" />
-        <meta property="og:description" content="Accompagnement en contrôle fiscal et défense en cas de contentieux avec l'administration fiscale." />
-        <meta property="og:image" content="/images/contentieux-fiscal.jpg" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-fiscal/contentieux" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contrôle et Contentieux Fiscaux | Cabinet Mériéux" />
-        <meta name="twitter:description" content="Défense et accompagnement en cas de contrôle fiscal et litiges avec l'administration fiscale." />
-        <meta name="twitter:image" content="/images/contentieux-fiscal.jpg" />
-      </Head>
+ 
          <PageHeader
                       title="Fiscalité Indirecte"
                       subtitle="Défendez efficacement vos intérêts avec l'expertise du Cabinet Mérieux"
@@ -43,13 +52,13 @@ export default function ContentieuxFiscauxPage() {
 
         {/* Services en Contentieux Fiscaux */}
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-center">Nos Services en Contrôle et Contentieux Fiscaux</h2>
+          <h2 className="text-2xl font-semibold text-primary text-center">Services en Contrôle et Contentieux Fiscaux</h2>
 
           {/* Assistance en Contrôle Fiscal */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Assistance en Contrôle Fiscal</h3>
             <p className="mt-2 text-gray-700">
-              Nous vous assistons à chaque étape du contrôle fiscal pour défendre vos intérêts et minimiser les risques.
+              Maître Mérieux vous assiste à chaque étape du contrôle fiscal pour défendre vos intérêts et minimiser les risques.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Préparation aux contrôles fiscaux</li>
@@ -63,7 +72,7 @@ export default function ContentieuxFiscauxPage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Défense en Contentieux Fiscal</h3>
             <p className="mt-2 text-gray-700">
-              En cas de litige avec l&rsquo;administration fiscale, nous mettons en place une défense adaptée à votre situation.
+              En cas de litige avec l&rsquo;administration fiscale, le cabinet met en place une défense adaptée à votre situation.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Rédaction de réclamations contentieuses</li>
@@ -77,7 +86,7 @@ export default function ContentieuxFiscauxPage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Optimisation et Stratégie de Contentieux Fiscal</h3>
             <p className="mt-2 text-gray-700">
-              Nous vous aidons à anticiper les risques fiscaux et à mettre en place une stratégie de défense proactive.
+              Maître Mérieux vous aide à anticiper les risques fiscaux et à mettre en place une stratégie de défense proactive.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Audit fiscal préventif pour identifier les risques</li>
@@ -91,7 +100,7 @@ export default function ContentieuxFiscauxPage() {
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
           <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
-            Contactez-nous pour une consultation
+            Contactez-moi
           </a>
         </div>
       </main>

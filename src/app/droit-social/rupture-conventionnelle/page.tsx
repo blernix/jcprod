@@ -1,27 +1,40 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import PageHeader from "@/app/components/PageHeader";
 
+
+export const metadata: Metadata = {
+  title: "Rupture conventionnelle | Cabinet Mérieux",
+  description: "Le Cabinet Mérieux vous assiste dans les ruptures conventionnelles et les recours en prud'hommes.",
+  keywords: [
+    "rupture conventionnelle",
+    "avocat droit du travail",
+    "prud'hommes",
+    "droit social",
+    "accord employeur salarié",
+    "indemnités"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Rupture conventionnelle | Cabinet Mérieux",
+    description: "Comprendre les règles de la rupture conventionnelle et ses recours possibles.",
+    url: "https://cabinet-merieux.fr/droit-social/rupture-conventionnelle",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rupture conventionnelle | Cabinet Mérieux",
+    description: "Comprendre les règles de la rupture conventionnelle et ses recours possibles.",
+  },
+};
 export default function RuptureConventionnellePage() {
   return (
     <>
-      <Head>
-        <title>Rupture Conventionnelle | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet Mériéux vous assiste dans les ruptures conventionnelles et les recours en prud'hommes." />
-        <meta name="keywords" content="rupture conventionnelle, avocat droit du travail, prud'hommes, droit social, accord employeur salarié, indemnités" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Rupture Conventionnelle | Cabinet Mériéux" />
-        <meta property="og:description" content="Comprendre les règles de la rupture conventionnelle et ses recours possibles." />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-social/rupture-conventionnelle" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+    
 
       {/* Image de la page */}
       <PageHeader
         title="Rupture Conventionnelle"
-        subtitle="Obtenez le départ que vous méritez avec l&rsquo;expertise du Cabinet Mériéux"
+        subtitle="Obtenez le départ que vous méritez avec l&rsquo;expertise du Cabinet Mérieux"
         imageSrc="/header/conventionnelle.jpg"
       />
 
@@ -40,7 +53,7 @@ export default function RuptureConventionnellePage() {
           <p className="mt-4 text-gray-700 text-justify">
             Pour être valide, une rupture conventionnelle doit respecter plusieurs étapes légales :
           </p>
-          <ul className="mt-4 list-disc list-inside text-center">
+          <ul className="mt-4 list-none list-inside text-center">
             <li>📌 Un <strong>entretien préalable</strong> entre l&rsquo;employeur et le salarié.</li>
             <li>📌 La signature d&rsquo;une <strong>convention écrite</strong> précisant les modalités du départ.</li>
             <li>📌 Un <strong>délai de rétractation</strong> de 15 jours calendaires après la signature.</li>
@@ -55,7 +68,7 @@ export default function RuptureConventionnellePage() {
           <p className="mt-4 text-gray-700 text-center">
             Lors d’une rupture conventionnelle, le salarié perçoit une <strong>indemnité spécifique</strong>, qui ne peut être inférieure à l&rsquo;<strong>indemnité légale de licenciement</strong>. Son montant dépend de :
           </p>
-          <ul className="mt-4 list-disc list-inside text-center">
+          <ul className="mt-4 list-none list-inside text-center">
             <li>📌 <strong>L&rsquo;ancienneté</strong> du salarié dans l&rsquo;entreprise.</li>
             <li>📌 <strong>Le salaire brut</strong> des 12 derniers mois.</li>
             <li>📌 <strong>Les accords d’entreprise</strong> éventuels.</li>

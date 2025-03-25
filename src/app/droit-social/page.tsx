@@ -1,30 +1,38 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 
+
+export const metadata: Metadata = {
+  title: "Droit social | Cabinet Mérieux",
+  description: "Le Cabinet Mérieux vous accompagne dans la gestion du droit social : licenciements, ruptures conventionnelles, relations employeur-salarié.",
+  keywords: [
+    "droit social",
+    "licenciement",
+    "rupture conventionnelle",
+    "droit du travail",
+    "avocat entreprise"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Droit social | Cabinet Mérieux",
+    description: "Accompagnement juridique en droit social : licenciements, ruptures conventionnelles et protection des salariés.",
+    url: "https://cabinet-merieux.fr/droit-social",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Droit social | Cabinet Mérieux",
+    description: "Le Cabinet Mérieux vous conseille sur le droit du travail et les litiges employeur-salarié.",
+  },
+};
 export default function DroitSocialPage() {
   return (
     <>
-      <Head>
-        <title>Droit Social | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet Mériéux vous accompagne dans la gestion du droit social : licenciements, ruptures conventionnelles, relations employeur-salarié." />
-        <meta name="keywords" content="droit social, licenciement, rupture conventionnelle, droit du travail, avocat entreprise" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Droit Social | Cabinet Mériéux" />
-        <meta property="og:description" content="Accompagnement juridique en droit social : licenciements, ruptures conventionnelles et protection des salariés." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-social" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Droit Social | Cabinet Mériéux" />
-        <meta name="twitter:description" content="Le Cabinet Mériéux vous conseille sur le droit du travail et les litiges employeur-salarié." />
-      </Head>
+    
          <PageHeader
               title="Droit Social"
-              subtitle="Bénéficiez de l'expertise du Cabinet Mériéux"
+              subtitle="Bénéficiez de l'expertise du Cabinet Mérieux"
               imageSrc="/header/droit-social.jpg"
             />
 

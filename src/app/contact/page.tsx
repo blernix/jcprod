@@ -1,26 +1,31 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Contact | Cabinet Mérieux – Avocat en droit fiscal",
+  description: "Contactez le Cabinet Mérieux pour toute question juridique en droit fiscal, droit des affaires et droit social.",
+  keywords: ["contact avocat", "cabinet Mérieux", "avocat fiscaliste", "droit des affaires"],
+  openGraph: {
+    title: "Contact | Cabinet Mérieux – Avocat en droit fiscal",
+    description: "Besoin d’un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mérieux.",
+    url: "https://cabinet-merieux.fr/contact",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | Cabinet Mérieux – Avocat en droit fiscal",
+    description: "Besoin d’un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mérieux.",
+  },
+};
 
 export default function ContactPage() {
     return (
       <>
-        <Head>
-          <title>Contact | Cabinet Mériéux - Avocat en Droit Fiscal</title>
-          <meta name="description" content="Contactez le Cabinet Mériéux pour toute question juridique en droit fiscal, droit des affaires et droit social." />
-          <meta name="keywords" content="contact avocat, cabinet Mériéux, avocat fiscaliste, droit des affaires" />
-
-          {/* Open Graph */}
-          <meta property="og:title" content="Contact | Cabinet Mériéux - Avocat en Droit Fiscal" />
-          <meta property="og:description" content="Besoin d’un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mériéux." />
-          <meta property="og:url" content="https://cabinet-merieux.fr/contact" />
-
-          {/* Twitter Card */}
-          <meta name="twitter:card" content="summary_large_image" />
-        </Head>
+      
 
         <main className="container mx-auto p-6">
           <h1 className="text-3xl font-bold text-primary text-center">Contact</h1>
-          <p className="mt-4 text-center">Besoin d’un conseil ? Contactez-nous :</p>
+          <p className="mt-4 text-center">Besoin d’un conseil ? Contactez-moi :</p>
 
           <ul className="mt-6 space-y-4 text-center">
             {/* 📍 Adresse - Ouvre Google Maps ou Apple Plans */}

@@ -1,32 +1,41 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import PageHeader from "@/app/components/PageHeader";
 
+
+
+export const metadata: Metadata = {
+  title: "Fiscalité des entreprises | Cabinet Mérieux",
+  description: "Le Cabinet Mérieux accompagne les entreprises dans leur stratégie fiscale : optimisation, déclarations et contentieux fiscaux.",
+  keywords: [
+    "fiscalité des entreprises",
+    "avocat fiscaliste",
+    "optimisation fiscale",
+    "stratégie fiscale",
+    "contentieux fiscal"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Fiscalité des entreprises | Cabinet Mérieux",
+    description: "Accompagnement en optimisation fiscale, gestion des déficits et contentieux fiscaux pour les entreprises.",
+    url: "https://cabinet-merieux.fr/droit-fiscal/entreprises",
+    type: "article",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fiscalité des entreprises | Cabinet Mérieux",
+    description: "Accompagnement en droit fiscal des entreprises : gestion fiscale, déclarations, contrôle et contentieux fiscaux.",
+    images: ["/logometa.jpeg"],
+  },
+};
 export default function FiscaliteEntreprisesPage() {
   return (
     <>
-      <Head>
-        <title>Fiscalité des Entreprises | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet Mériéux accompagne les entreprises dans leur stratégie fiscale : optimisation, déclarations et contentieux fiscaux." />
-        <meta name="keywords" content="fiscalité des entreprises, avocat fiscaliste, optimisation fiscale, stratégie fiscale, contentieux fiscal" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour Facebook & LinkedIn */}
-        <meta property="og:title" content="Fiscalité des Entreprises | Cabinet Mériéux" />
-        <meta property="og:description" content="Accompagnement en optimisation fiscale, gestion des déficits et contentieux fiscaux pour les entreprises." />
-        <meta property="og:image" content="/images/fiscalite-entreprises.jpg" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-fiscal/entreprises" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Fiscalité des Entreprises | Cabinet Mériéux" />
-        <meta name="twitter:description" content="Accompagnement en droit fiscal des entreprises : gestion fiscale, déclarations, contrôle et contentieux fiscaux." />
-        <meta name="twitter:image" content="/images/fiscalite-entreprises.jpg" />
-      </Head>
+  
        {/* Header personnalisé */}
        <PageHeader
         title="Fiscalité des Entreprises"
-        subtitle="Maîtrisez la fiscalité avec l'expertise du Cabinet Mériéux"
+        subtitle="Maîtrisez la fiscalité avec l'expertise du Cabinet Mérieux"
         imageSrc="/header/fiscalite-entreprise.jpg"
       />
 
@@ -45,7 +54,7 @@ export default function FiscaliteEntreprisesPage() {
 
         {/* Services en Fiscalité des Entreprises */}
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-center">Nos Services en Fiscalité des Entreprises</h2>
+          <h2 className="text-2xl font-semibold text-primary text-center">Services en Fiscalité des Entreprises</h2>
 
           {/* Optimisation et Stratégie Fiscale */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
@@ -65,7 +74,7 @@ export default function FiscaliteEntreprisesPage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Fiscalité Transactionnelle</h3>
             <p className="mt-2 text-gray-700">
-              Nous vous accompagnons dans la structuration et l’optimisation des opérations d’acquisition et de cession d’entreprises.
+              Je vous accompagnons dans la structuration et l’optimisation des opérations d’acquisition et de cession d’entreprises.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Audit et revue fiscale d’acquisition ou de cession</li>
@@ -93,7 +102,7 @@ export default function FiscaliteEntreprisesPage() {
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
           <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
-            Contactez-nous pour une consultation
+            Contactez-moi
           </a>
         </div>
       </main>

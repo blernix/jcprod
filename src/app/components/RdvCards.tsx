@@ -1,39 +1,41 @@
+"use client";
 import Image from "next/image";
+
 
 const rdvOptions = [
   {
     title: "Rendez-vous cabinet",
     description: "Consultation de 60 min pour 180€",
     image: "/icones/rdv.png",
-    link: "https://consultation.avocat.fr/consultation-cabinet/forms.php?hashid=316ccf0aefa6b0e899ed",
+    link: "https://consultation.avocat.fr/consultation-cabinet/forms.php?source=profile&targetid=39468",
     ariaLabel: "Prendre rendez-vous pour une consultation de 60 min pour 180€"
   },
   {
     title: "Consultation vidéo",
     description: "Consultation de 30 min pour 75€",
     image: "/icones/facetime.png",
-    link: "https://consultation.avocat.fr/consultation-video/forms.php?hashid=f6eb4238a99c27307b69",
+    link: "https://consultation.avocat.fr/consultation-video/forms.php?source=profile&targetid=39468",
     ariaLabel: "Prendre rendez-vous pour une consultation vidéo de 30 min pour 75€"
   },
   {
     title: "Consultation téléphonique",
     description: "Consultation de 10 min pour 45€",
     image: "/icones/appel.png",
-    link: "https://consultation.avocat.fr/consultation-telephonique/forms.php?hashid=4f47434ffb7a83071af8",
+    link: "https://consultation.avocat.fr/consultation-telephonique/forms.php?source=profile&targetid=39468",
     ariaLabel: "Prendre rendez-vous pour une consultation téléphonique de 10 min pour 45€"
   },
   {
     title: "Question simple",
     description: "Réponse pour 45€",
     image: "/icones/question.png",
-    link: "https://consultation.avocat.fr/question-simple/forms.php?hashid=dce91f22cac3bdcd3189",
+    link: "https://consultation.avocat.fr/question-simple/forms.php?source=profile&targetid=39468",
     ariaLabel: "Posez votre question pour 45€"
   },
   {
     title: "Consultation écrite",
     description: "Réponse pour 300€",
     image: "/icones/consultation-ecrite.png",
-    link: "https://consultation.avocat.fr/consultation-juridique/forms.php?hashid=97841ed7f81245c36d48",
+    link: "https://consultation.avocat.fr/consultation-juridique/forms.php?source=profile&targetid=39468",
     ariaLabel: "Posez votre question pour une consultation écrite à 300€"
   }
 ];

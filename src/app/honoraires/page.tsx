@@ -1,27 +1,36 @@
-import Head from "next/head";
+import { Metadata } from "next";
+import RdvCards from "../components/RdvCards";
 
+
+export const metadata: Metadata = {
+  title: "Honoraires | Cabinet Mérieux – Transparence et tarification",
+  description: "Découvrez les honoraires du Cabinet Mérieux : facturation au forfait, au temps passé ou au résultat, avec une totale transparence.",
+  keywords: [
+    "honoraires avocat",
+    "tarification avocat",
+    "forfait avocat",
+    "facturation avocat",
+    "Cabinet Mérieux"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Honoraires | Cabinet Mérieux – Transparence et tarification",
+    description: "Découvrez la tarification du Cabinet Mérieux, proposant des honoraires adaptés aux besoins des clients.",
+    url: "https://cabinet-merieux.fr/honoraires",
+    type: "article",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Honoraires | Cabinet Mérieux – Transparence et tarification",
+    description: "Découvrez les différentes options de facturation du Cabinet Mérieux : forfait, temps passé ou honoraire au résultat.",
+    images: ["/logometa.jpeg"],
+  },
+};
 export default function HonorairesPage() {
   return (
     <>
-      <Head>
-        <title>Honoraires | Cabinet Mériéux - Transparence et Tarification</title>
-        <meta name="description" content="Découvrez les honoraires du Cabinet Mériéux : facturation au forfait, au temps passé ou au résultat, avec une totale transparence." />
-        <meta name="keywords" content="honoraires avocat, tarification avocat, forfait avocat, facturation avocat, Cabinet Mériéux" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour Facebook & LinkedIn */}
-        <meta property="og:title" content="Honoraires | Cabinet Mériéux - Transparence et Tarification" />
-        <meta property="og:description" content="Découvrez la tarification du Cabinet Mériéux, proposant des honoraires adaptés aux besoins des clients." />
-        <meta property="og:image" content="/images/honoraires.jpg" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/honoraires" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Honoraires | Cabinet Mériéux - Transparence et Tarification" />
-        <meta name="twitter:description" content="Découvrez les différentes options de facturation du Cabinet Mériéux : forfait, temps passé ou honoraire au résultat." />
-        <meta name="twitter:image" content="/images/honoraires.jpg" />
-      </Head>
+   
 
       <main className="container mx-auto p-6">
         <h1 className="text-4xl font-bold text-primary text-center">Honoraires et Tarification</h1>
@@ -68,6 +77,7 @@ export default function HonorairesPage() {
             </p>
           </div>
         </section>
+        <RdvCards/>
       </main>
     </>
   );

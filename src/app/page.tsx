@@ -1,29 +1,34 @@
-import Head from "next/head";
+import type { Metadata } from "next";
+
 import Link from "next/link";
 import PageHeader from "./components/PageHeader";
+import RdvCards from "./components/RdvCards";
 
+export const metadata: Metadata = {
+  title: "Cabinet Mérieux – Avocat en droit fiscal & des affaires",
+  description: "Le Cabinet Mérieux, situé à La Rochette (77), vous accompagne en droit fiscal, droit des affaires et transactions immobilières.",
+  keywords: ["avocat fiscaliste", "droit fiscal", "droit des affaires", "transactions immobilières", "avocat La Rochette"],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Cabinet Mérieux – Avocat en droit fiscal & des affaires",
+    description: "Maître Jean-Claude MÉRIEUX vous accompagne en droit fiscal, droit des affaires et transactions immobilières.",
+    url: "https://cabinet-merieux.fr",
+    type: "website",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cabinet Mérieux – Avocat en droit fiscal & des affaires",
+    description: "Expertise en droit fiscal, droit des affaires et transactions immobilières.",
+    images: ["/logometa.jpeg"],
+  },
+};
 export default function HomePage() {
+
+ 
   return (
     <>
-      <Head>
-        <title>Cabinet Mériéux | Avocat en Droit Fiscal & des Affaires</title>
-        <meta name="description" content="Cabinet Mériéux - Avocat spécialisé en droit fiscal, droit des affaires et transactions immobilières à La Rochette (77)." />
-        <meta name="keywords" content="avocat fiscaliste, droit fiscal, droit des affaires, transactions immobilières, avocat La Rochette" />
-        <meta name="author" content="Cabinet Mériéux" />
 
-        {/* Open Graph pour Facebook & LinkedIn */}
-        <meta property="og:title" content="Cabinet Mériéux | Avocat en Droit Fiscal & des Affaires" />
-        <meta property="og:description" content="Maître Jean-Claude MÉRIEUX vous accompagne en droit fiscal, droit des affaires et transactions immobilières." />
-        <meta property="og:image" content="/images/cabinet-merieux.jpg" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cabinet-merieux.fr" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cabinet Mériéux | Avocat en Droit Fiscal & des Affaires" />
-        <meta name="twitter:description" content="Expertise en droit fiscal, droit des affaires et transactions immobilières." />
-        <meta name="twitter:image" content="/images/cabinet-merieux.jpg" />
-      </Head>
 
       {/* Header avec l’image du cabinet */}
       <PageHeader
@@ -40,13 +45,13 @@ export default function HomePage() {
           <h2 className="text-4xl font-bold text-primary">Une expertise à votre service</h2>
           <p className="mt-6 max-w-3xl mx-auto text-gray-700 leading-relaxed">
             Le <strong>Cabinet Mériéux</strong> vous accompagne dans toutes vos démarches juridiques, fiscales et immobilières, avec une approche 
-            personnalisée et rigoureuse. Nous défendons vos intérêts avec <strong>transparence, réactivité et professionnalisme</strong>.
+            personnalisée et rigoureuse. Le cabinet défend vos intérêts avec <strong>transparence, réactivité et professionnalisme</strong>.
           </p>
         </section>
 
         {/* Services */}
         <section>
-          <h2 className="text-4xl font-bold text-primary text-center mb-12">Nos Prestations</h2>
+          <h2 className="text-4xl font-bold text-primary text-center mb-12">Les Prestations</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Droit Fiscal */}
             <div className="bg-white shadow-md border border-gray-200 p-8 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1 text-center">
@@ -79,7 +84,7 @@ export default function HomePage() {
               <p className="mt-3 text-gray-600">
                 Sécurisation des transactions immobilières et accompagnement juridique.
               </p>
-              <Link href="/immobilier" className="mt-4 inline-block text-secondary hover:text-red-600 transition">
+              <Link href="/droit-fiscal/immobiliere" className="mt-4 inline-block text-secondary hover:text-red-600 transition">
                 En savoir plus →
               </Link>
             </div>
@@ -117,11 +122,12 @@ export default function HomePage() {
         {/* CTA vers Contact */}
         <div className="text-center">
           <h2 className="text-3xl font-bold text-primary mb-4">Besoin d’un conseil juridique ?</h2>
-          <p className="text-gray-700 mb-6">Nous sommes à votre écoute pour vous accompagner dans toutes vos démarches.</p>
+          <p className="text-gray-700 mb-6">Je suis à votre écoute pour vous accompagner dans toutes vos démarches.</p>
           <Link href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-red-700 hover:scale-105 transition transform">
-            Contactez-nous
+            Contactez-moi
           </Link>
         </div>
+        <RdvCards/>
       </main>
     </>
   );

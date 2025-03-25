@@ -1,29 +1,42 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import PageHeader from "@/app/components/PageHeader";
+
+
+
+
+export const metadata: Metadata = {
+  title: "Droit des sociétés | Cabinet Mérieux",
+  description: "Le Cabinet de Maître Jean-Claude Mérieux accompagne les entreprises dans toutes les étapes de la vie de leur société : création, gouvernance, cession, liquidation.",
+  keywords: [
+    "droit des sociétés",
+    "avocat entreprise",
+    "création de société",
+    "fusion",
+    "acquisition",
+    "pacte d’actionnaires",
+    "cession de titres"
+  ],
+  authors: [{ name: "Cabinet Mérieux" }],
+  openGraph: {
+    title: "Droit des sociétés | Cabinet Mérieux",
+    description: "Accompagnement juridique des entreprises en droit des sociétés : constitution, gouvernance, fusion, liquidation.",
+    url: "https://cabinet-merieux.fr/droit-affaires/societes",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Droit des sociétés | Cabinet Mérieux",
+    description: "Le Cabinet Mérieux vous accompagne tout au long de la vie de votre société : création, fusion, cession, gouvernance.",
+  },
+};
 
 export default function DroitSocietesPage() {
   return (
     <>
-      <Head>
-        <title>Droit des Sociétés | Cabinet Mériéux</title>
-        <meta name="description" content="Le Cabinet de Maître Jean-Claude MÉRIEUX accompagne les entreprises dans toutes les étapes de la vie de leur société : création, gouvernance, cession, liquidation." />
-        <meta name="keywords" content="droit des sociétés, avocat entreprise, création de société, fusion, acquisition, pacte d’actionnaires, cession de titres" />
-        <meta name="author" content="Cabinet Mériéux" />
-
-        {/* Open Graph pour les réseaux sociaux */}
-        <meta property="og:title" content="Droit des Sociétés | Cabinet Mériéux" />
-        <meta property="og:description" content="Accompagnement juridique des entreprises en droit des sociétés : constitution, gouvernance, fusion, liquidation." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cabinet-merieux.fr/droit-affaires/societes" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Droit des Sociétés | Cabinet Mériéux" />
-        <meta name="twitter:description" content="Le Cabinet Mériéux vous accompagne tout au long de la vie de votre société : création, fusion, cession, gouvernance." />
-      </Head>
+  
       <PageHeader
         title="Droit des Sociétés"
-        subtitle="Accompagnement avec l'expertise du Cabinet Mériéux"
+        subtitle="Accompagnement avec l'expertise du Cabinet Mérieux"
         imageSrc="/header/entreprise.jpg"
       />
       <main className="container mx-auto p-6">
@@ -105,6 +118,7 @@ export default function DroitSocietesPage() {
             </div>
           </div>
         </section>
+        
       </main>
     </>
   );
