@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import RdvCards from "../components/RdvCards";
 
 export const metadata: Metadata = {
   title: "Contact | Cabinet Mérieux – Avocat en droit fiscal",
@@ -54,6 +55,7 @@ export default function ContactPage() {
               </Link>
             </li>
           </ul>
+        <RdvCards/>
         </main>
       </>
     );

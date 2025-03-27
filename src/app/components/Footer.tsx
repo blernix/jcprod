@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         {/* Informations du cabinet */}
         <div className="text-center md:text-left">
-          <h2 className="text-lg font-semibold">Cabinet Mériéux</h2>
+          <h2 className="text-lg font-semibold">Cabinet Mérieux</h2>
           <p className="mt-2 text-sm">
             <Link 
               href="https://maps.google.com/?q=1+RUE+HONORE+DAUMIER,77000+La+Rochette" 
@@ -49,7 +49,7 @@ export default function Footer() {
 
         {/* Mentions légales & Politique de confidentialité */}
         <div className="mt-6 md:mt-0 text-center md:text-right text-xs">
-          <p>© {new Date().getFullYear()} Cabinet Mériéux. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Cabinet Mérieux. Tous droits réservés.</p>
           <p>
             <Link href="/mentions-legales" className="hover:text-secondary">Mentions légales</Link> | <Link href="/confidentialite" className="hover:text-secondary">Politique de confidentialité</Link>
           </p>

@@ -39,7 +39,7 @@ export default function Immobilier() {
 </div>
         
         <p className="mt-4 text-lg text-gray-700">
-          Le Cabinet Mériéux vous accompagne dans vos transactions immobilières avec un suivi juridique rigoureux.
+          Le Cabinet Mérieux vous accompagne dans vos transactions immobilières avec un suivi juridique rigoureux.
         </p>
 
         {/* Détails du bien */}

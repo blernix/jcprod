@@ -47,7 +47,7 @@ export default function FiscalitePatrimonialePage() {
             Une bonne stratégie permet d&rsquo;optimiser la fiscalité et d’anticiper les obligations légales.
           </p>
           <p className="mt-4 text-gray-700">
-            Le <strong>Cabinet Mériéux</strong> vous accompagne dans la structuration de votre patrimoine, la transmission de vos actifs et la régularisation fiscale.
+            Le <strong>Cabinet Mérieux</strong> vous accompagne dans la structuration de votre patrimoine, la transmission de vos actifs et la régularisation fiscale.
           </p>
         </section>
 
@@ -73,7 +73,7 @@ export default function FiscalitePatrimonialePage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Transmission de Patrimoine</h3>
             <p className="mt-2 text-gray-700">
-              le cabinet vous conseille sur la meilleure façon de transmettre votre patrimoine en minimisant les coûts fiscaux.
+              Le cabinet vous conseille sur la meilleure façon de transmettre votre patrimoine en minimisant les coûts fiscaux.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Pacte Dutreil et donation avant cession</li>

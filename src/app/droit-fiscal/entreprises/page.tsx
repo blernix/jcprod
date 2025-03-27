@@ -47,7 +47,7 @@ export default function FiscaliteEntreprisesPage() {
             Une gestion fiscale optimisée permet d&rsquo;anticiper les charges, réduire les risques et améliorer la rentabilité.
           </p>
           <p className="mt-4 text-gray-700">
-            Le <strong>Cabinet Mériéux</strong> accompagne les entreprises dans la gestion et l’optimisation de leur fiscalité, 
+            Le <strong>Cabinet Mérieux</strong> accompagne les entreprises dans la gestion et l’optimisation de leur fiscalité, 
             en tenant compte des obligations légales et des opportunités fiscales.
           </p>
         </section>
@@ -60,7 +60,7 @@ export default function FiscaliteEntreprisesPage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Optimisation et Stratégie Fiscale</h3>
             <p className="mt-2 text-gray-700">
-              Le Cabinet Mériéux vous aide à élaborer une <strong>stratégie fiscale efficace</strong> pour minimiser les charges fiscales tout en respectant la réglementation.
+              Le Cabinet Mérieux vous aide à élaborer une <strong>stratégie fiscale efficace</strong> pour minimiser les charges fiscales tout en respectant la réglementation.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Choix de la localisation et du mode d’implantation (sociétés de capitaux, partnerships...)</li>
@@ -88,7 +88,7 @@ export default function FiscaliteEntreprisesPage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Gestion des Contentieux Fiscaux</h3>
             <p className="mt-2 text-gray-700">
-              En cas de contrôle fiscal ou de litige avec l&rsquo;administration fiscale, le Cabinet Mériéux vous assiste dans la gestion des contentieux.
+              En cas de contrôle fiscal ou de litige avec l&rsquo;administration fiscale, le Cabinet Mérieux vous assiste dans la gestion des contentieux.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Assistance lors des contrôles fiscaux</li>

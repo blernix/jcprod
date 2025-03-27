@@ -49,7 +49,7 @@ export default function DroitFiscalPage() {
             Il permet d&rsquo;assurer une gestion optimale de la fiscalité, tout en respectant les obligations légales.
           </p>
           <p className="mt-4 text-gray-700 text-center">
-            Le Cabinet Mériéux vous accompagne dans tous les aspects du droit fiscal, que ce soit pour
+            Le Cabinet Mérieux vous accompagne dans tous les aspects du droit fiscal, que ce soit pour
             <strong> optimiser votre fiscalité</strong>, <strong>gérer un contentieux</strong> ou <strong>assurer la conformité de votre entreprise</strong>.
           </p>
         </section>

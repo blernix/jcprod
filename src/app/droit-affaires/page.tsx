@@ -50,7 +50,7 @@ export default function DroitAffairesPage() {
             Il comprend plusieurs branches telles que le <strong>droit des sociétés</strong> et le <strong>droit commercial</strong>.
           </p>
           <p className="mt-4 text-gray-700 text-center">
-            Le <strong>Cabinet Mériéux</strong> accompagne les entrepreneurs et chefs d’entreprise dans toutes les étapes de la vie de leur société :
+            Le <strong>Cabinet Mérieux</strong> accompagne les entrepreneurs et chefs d’entreprise dans toutes les étapes de la vie de leur société :
             création, développement, négociation et litiges.
           </p>
         </section>

@@ -49,7 +49,7 @@ export default function DroitSocialPage() {
             Le <strong>droit social</strong> régit les relations entre employeurs et salariés. Il encadre les conditions de travail, la gestion des contrats et la <strong>résolution des litiges</strong>.
           </p>
           <p className="mt-4">
-            Le Cabinet Mériéux vous aide à <strong>sécuriser vos décisions</strong> en respectant la réglementation en vigueur.
+            Le Cabinet Mérieux vous aide à <strong>sécuriser vos décisions</strong> en respectant la réglementation en vigueur.
           </p>
         </section>
 

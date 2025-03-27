@@ -51,7 +51,7 @@ export default function DroitSocietesPage() {
 <section className="mt-12">
   <h2 className="text-2xl font-semibold text-primary text-center">Un accompagnement à chaque étape</h2>
   <p className="mt-4 text-center">
-    Depuis la <strong>création</strong> d&rsquo;une société jusqu&rsquo;à sa <strong>liquidation</strong>, le Cabinet Mériéux conseille ses clients sur toutes les décisions stratégiques et juridiques, en intégrant les aspects fiscaux et sociaux.
+    Depuis la <strong>création</strong> d&rsquo;une société jusqu&rsquo;à sa <strong>liquidation</strong>, le Cabinet Mérieux conseille ses clients sur toutes les décisions stratégiques et juridiques, en intégrant les aspects fiscaux et sociaux.
   </p>
   <p className="mt-4 text-center">
     L&rsquo;objectif est d&rsquo;assurer la <strong>pérennité et la sécurité juridique</strong> des structures, tout en optimisant la gouvernance et la gestion des relations entre associés.

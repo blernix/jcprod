@@ -46,7 +46,7 @@ export default function FiscaliteIndirectePage() {
             Elle inclut notamment la <strong>TVA</strong>, les <strong>droits d&rsquo;enregistrement</strong> et les <strong>taxes spécifiques</strong>.
           </p>
           <p className="mt-4 text-gray-700 text-center">
-            Le <strong>Cabinet Mériéux</strong> vous accompagne dans l&rsquo;optimisation de votre fiscalité indirecte et dans la gestion des obligations déclaratives.
+            Le <strong>Cabinet Mérieux</strong> vous accompagne dans l&rsquo;optimisation de votre fiscalité indirecte et dans la gestion des obligations déclaratives.
           </p>
         </section>
 
