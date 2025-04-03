@@ -44,7 +44,7 @@ export default function HomePage() {
         <section className="text-center">
           <h2 className="text-4xl font-bold text-primary">Une expertise à votre service</h2>
           <p className="mt-6 max-w-3xl mx-auto text-gray-700 leading-relaxed">
-            Le <strong>Cabinet Mériéux</strong> vous accompagne dans toutes vos démarches juridiques, fiscales et immobilières, avec une approche 
+            Le <strong>Cabinet Mérieux</strong> vous accompagne dans toutes vos démarches juridiques, fiscales et immobilières, avec une approche 
             personnalisée et rigoureuse. Le cabinet défend vos intérêts avec <strong>transparence, réactivité et professionnalisme</strong>.
           </p>
         </section>

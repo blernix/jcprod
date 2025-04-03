@@ -45,7 +45,7 @@ export default function LicenciementPage() {
           <h2 className="text-3xl font-semibold text-primary text-center">Comprendre le licenciement</h2>
           <p className="mt-4 text-gray-700 text-center">
             Le licenciement est une procédure délicate encadrée par le <strong>Code du Travail</strong>. Un employeur doit respecter un formalisme précis pour éviter toute contestation devant le <strong>Conseil de Prud&rsquo;hommes</strong>. 
-            Le Cabinet Mériéux accompagne <strong>employeurs et salariés</strong> pour garantir une procédure conforme à la réglementation en vigueur.
+            Le Cabinet Mérieux accompagne <strong>employeurs et salariés</strong> pour garantir une procédure conforme à la réglementation en vigueur.
           </p>
         </section>
 
