@@ -46,7 +46,7 @@ export default function FiscaliteEntreprisesPage() {
             La <strong>fiscalité des entreprises</strong> couvre l&rsquo;ensemble des règles encadrant l&rsquo;imposition des sociétés et des professionnels.
             Une gestion fiscale optimisée permet d&rsquo;anticiper les charges, réduire les risques et améliorer la rentabilité.
           </p>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-lg text-gray-700">
             Le <strong>Cabinet Mérieux</strong> accompagne les entreprises dans la gestion et l’optimisation de leur fiscalité, 
             en tenant compte des obligations légales et des opportunités fiscales.
           </p>
@@ -54,11 +54,11 @@ export default function FiscaliteEntreprisesPage() {
 
         {/* Services en Fiscalité des Entreprises */}
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-center">Services en Fiscalité des Entreprises</h2>
-
+          <h2 className="text-2xl font-semibold text-primary text-center">Services en fiscalité des entreprises</h2>
+          <div className="w-44 border-t border-gray-300 mt-11 mx-auto"></div>
           {/* Optimisation et Stratégie Fiscale */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-primary text-center">Optimisation et Stratégie Fiscale</h3>
+            <h3 className="text-xl font-semibold text-primary text-center">Optimisation et stratégie fiscale</h3>
             <p className="mt-2 text-gray-700">
               Le Cabinet Mérieux vous aide à élaborer une <strong>stratégie fiscale efficace</strong> pour minimiser les charges fiscales tout en respectant la réglementation.
             </p>
@@ -72,7 +72,7 @@ export default function FiscaliteEntreprisesPage() {
 
           {/* Fiscalité Transactionnelle */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-primary text-center">Fiscalité Transactionnelle</h3>
+            <h3 className="text-xl font-semibold text-primary text-center">Fiscalité transactionnelle</h3>
             <p className="mt-2 text-gray-700">
               Je vous accompagnons dans la structuration et l’optimisation des opérations d’acquisition et de cession d’entreprises.
             </p>
@@ -86,7 +86,7 @@ export default function FiscaliteEntreprisesPage() {
 
           {/* Gestion des Contentieux Fiscaux */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-primary text-center">Gestion des Contentieux Fiscaux</h3>
+            <h3 className="text-xl font-semibold text-primary text-center">Gestion des contentieux fiscaux</h3>
             <p className="mt-2 text-gray-700">
               En cas de contrôle fiscal ou de litige avec l&rsquo;administration fiscale, le Cabinet Mérieux vous assiste dans la gestion des contentieux.
             </p>

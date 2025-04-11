@@ -34,7 +34,7 @@ export default function FiscaliteIndirectePage() {
     
        <PageHeader
               title="Fiscalité Indirecte"
-              subtitle="Maîtrisez la  TVA, les droits d&rsquo;enregistrement et les taxes spécifiques avec l&rsquo;expertise du Cabinet Mérieux"
+              subtitle="TVA, droits d&rsquo;enregistrement, taxes spécifiques : maîtrisez tout avec l&rsquo;expertise du Cabinet Mérieux"
               imageSrc="/header/taxe.jpg"
             />
       <main className="container mx-auto p-6">
@@ -45,7 +45,7 @@ export default function FiscaliteIndirectePage() {
             La <strong>fiscalité indirecte</strong> concerne les impôts et taxes appliqués à la consommation et aux transactions économiques.
             Elle inclut notamment la <strong>TVA</strong>, les <strong>droits d&rsquo;enregistrement</strong> et les <strong>taxes spécifiques</strong>.
           </p>
-          <p className="mt-4 text-gray-700 text-center">
+          <p className="mt-4 text-lg text-gray-700 text-center">
             Le <strong>Cabinet Mérieux</strong> vous accompagne dans l&rsquo;optimisation de votre fiscalité indirecte et dans la gestion des obligations déclaratives.
           </p>
         </section>
@@ -53,7 +53,7 @@ export default function FiscaliteIndirectePage() {
         {/* Services en Fiscalité Indirecte */}
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-primary text-center">Services en Fiscalité Indirecte</h2>
-
+          <div className="w-44 border-t border-gray-300 mt-11 mx-auto"></div>
           {/* Gestion de la TVA */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Gestion de la TVA</h3>
@@ -74,7 +74,7 @@ export default function FiscaliteIndirectePage() {
             <p className="mt-2 text-gray-700 text-center">
               Un accompagnement dans l’analyse et la gestion des taxes appliquées aux transactions financières et patrimoniales.
             </p>
-            <ul className="mt-4 list-disc list-inside text-center">
+            <ul className="mt-4 list-disc list-inside">
               <li>Analyse des obligations en matière de droits d’enregistrement</li>
               <li>Optimisation des taxes sur les mutations d&rsquo;entreprises</li>
               <li>Fiscalité des cessions d’actifs et de fonds de commerce</li>

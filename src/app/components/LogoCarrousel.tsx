@@ -18,8 +18,8 @@ function LogoCarousel() {
         <Image
           src={logo.src}
           alt={logo.alt}
-          width={50}
-          height={50}
+          width={100}
+          height={100}
           priority
           className="object-contain max-h-full"
         />

@@ -53,7 +53,7 @@ export default function RuptureConventionnellePage() {
           <p className="mt-4 text-gray-700 text-justify">
             Pour être valide, une rupture conventionnelle doit respecter plusieurs étapes légales :
           </p>
-          <ul className="mt-4 list-none list-inside text-center">
+          <ul className="mt-4 list-none list-inside">
             <li>📌 Un <strong>entretien préalable</strong> entre l&rsquo;employeur et le salarié.</li>
             <li>📌 La signature d&rsquo;une <strong>convention écrite</strong> précisant les modalités du départ.</li>
             <li>📌 Un <strong>délai de rétractation</strong> de 15 jours calendaires après la signature.</li>
@@ -68,7 +68,7 @@ export default function RuptureConventionnellePage() {
           <p className="mt-4 text-gray-700 text-center">
             Lors d’une rupture conventionnelle, le salarié perçoit une <strong>indemnité spécifique</strong>, qui ne peut être inférieure à l&rsquo;<strong>indemnité légale de licenciement</strong>. Son montant dépend de :
           </p>
-          <ul className="mt-4 list-none list-inside text-center">
+          <ul className="mt-4 list-none list-inside">
             <li>📌 <strong>L&rsquo;ancienneté</strong> du salarié dans l&rsquo;entreprise.</li>
             <li>📌 <strong>Le salaire brut</strong> des 12 derniers mois.</li>
             <li>📌 <strong>Les accords d’entreprise</strong> éventuels.</li>

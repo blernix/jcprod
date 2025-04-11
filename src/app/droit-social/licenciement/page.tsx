@@ -93,7 +93,7 @@ export default function LicenciementPage() {
           <p className="mt-4">
             Un salarié peut être déclaré <strong>inapte</strong> par la médecine du travail lorsqu&rsquo;il ne peut plus occuper son poste. Ce diagnostic doit être établi après :
           </p>
-          <ul className="mt-4 list-none list-inside text-center">
+          <ul className="mt-4 list-none list-inside">
             <li>📌 Un <strong>examen médical</strong> par le médecin du travail.</li>
             <li>📌 Une <strong>analyse des conditions de travail</strong> du salarié.</li>
             <li>📌 Une <strong>visite de pré-reprise</strong> (si applicable).</li>
@@ -109,7 +109,7 @@ export default function LicenciementPage() {
           <p className="mt-4">
             Lors d&rsquo;un licenciement, l&rsquo;employeur doit impérativement respecter <strong>plusieurs étapes</strong> pour garantir la conformité de la procédure :
           </p>
-          <ul className="mt-4 list-none list-inside text-center">
+          <ul className="mt-4 list-none list-inside">
             <li>📌 <strong>Convocation</strong> à un entretien préalable par lettre recommandée.</li>
             <li>📌 <strong>Entretien avec le salarié</strong> pour exposer les raisons du licenciement.</li>
             <li>📌 <strong>Délai de réflexion</strong> après l’entretien avant la prise de décision.</li>

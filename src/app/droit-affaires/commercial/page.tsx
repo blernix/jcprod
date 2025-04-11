@@ -37,7 +37,7 @@ export default function DroitCommercialPage() {
                   />
       <main className="container mx-auto p-6">
         {/* <h1 className="text-4xl font-bold text-primary text-center">Droit Commercial & Économique</h1> */}
-        <p className="mt-4 text-lg text-gray-700 text-center">
+        <p className="mt-4  text-gray-700 text-center">
           Le Cabinet de Maître Jean-Claude MÉRIEUX accompagne les entreprises dans leurs décisions commerciales et économiques pour assurer leur développement en toute sécurité juridique.
         </p>
 
@@ -55,6 +55,7 @@ export default function DroitCommercialPage() {
         {/* Domaines d'intervention */}
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-primary text-center">Domaines d&rsquo;intervention</h2>
+          <div className="w-44 border-t border-gray-300 mt-11 mx-auto"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             {/* Carte 1 */}
             <div className="bg-gray-100 p-6 rounded-lg shadow">

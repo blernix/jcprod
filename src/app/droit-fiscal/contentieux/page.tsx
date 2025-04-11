@@ -33,9 +33,9 @@ export default function ContentieuxFiscauxPage() {
     <>
  
          <PageHeader
-                      title="Fiscalité Indirecte"
+                      title="Fiscalité Indirect"
                       subtitle="Défendez efficacement vos intérêts avec l'expertise du Cabinet Mérieux"
-                      imageSrc="/header/fiscalite-entreprise.jpg"
+                      imageSrc="/header/fiscalite-indirect.jpg"
                     />
       <main className="container mx-auto p-6">
         {/* En-tête */}
@@ -45,7 +45,7 @@ export default function ContentieuxFiscauxPage() {
             Un <strong>contrôle fiscal</strong> peut avoir des conséquences financières lourdes pour une entreprise ou un particulier.
             Il est essentiel d’être bien préparé et de défendre efficacement ses intérêts.
           </p>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-lg text-gray-700">
             Le <strong>Cabinet Mérieux</strong> accompagne ses clients tout au long de la procédure de contrôle fiscal et dans les litiges avec l&rsquo;administration fiscale.
           </p>
         </section>
@@ -53,7 +53,7 @@ export default function ContentieuxFiscauxPage() {
         {/* Services en Contentieux Fiscaux */}
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-primary text-center">Services en Contrôle et Contentieux Fiscaux</h2>
-
+          <div className="w-44 border-t border-gray-300 mt-11 mx-auto"></div>
           {/* Assistance en Contrôle Fiscal */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Assistance en Contrôle Fiscal</h3>

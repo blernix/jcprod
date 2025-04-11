@@ -34,18 +34,18 @@ export default function FiscaliteImmobilierePage() {
    {/* Header personnalisé */}
         <PageHeader
          title="Fiscalité Immobilière"
-         subtitle="Maîtrisez la fiscalité immobilière avec l'expertise du Cabinet Mérieux"
-         imageSrc="/header/fiscalite-entreprise.jpg"
+         subtitle="Transformez la complexité fiscale en stratégie gagnante avec le Cabinet Mérieux"
+         imageSrc="/header/fiscalite-immo.jpg"
        />
 
       <main className="container mx-auto p-6">
         {/* En-tête */}
         <section>
-          <h1 className="text-4xl font-bold text-primary text-center">Fiscalité Immobilière</h1>
+          {/* <h1 className="text-4xl font-bold text-primary text-center">Fiscalité Immobilière</h1> */}
           <p className="mt-4 text-lg text-gray-700">
             La <strong>fiscalité immobilière</strong> concerne les règles fiscales applicables aux transactions immobilières, aux investissements et aux structures de détention d’immeubles.
           </p>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-lg text-gray-700">
             Le <strong>Cabinet Mérieux</strong> accompagne les particuliers et les entreprises dans la gestion de leurs investissements immobiliers et l&rsquo;optimisation de leur fiscalité.
           </p>
         </section>
@@ -53,7 +53,7 @@ export default function FiscaliteImmobilierePage() {
         {/* Services en Fiscalité Immobilière */}
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-primary text-center">Services en Fiscalité Immobilière</h2>
-
+          <div className="w-44 border-t border-gray-300 mt-11 mx-auto"></div>
           {/* Structuration et Optimisation Fiscale des Investissements */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Structuration et Optimisation Fiscale des Investissements</h3>

@@ -51,12 +51,12 @@ export default function HomePage() {
 
         {/* Services */}
         <section>
-          <h2 className="text-4xl font-bold text-primary text-center mb-12">Les Prestations</h2>
+          <h2 className="text-4xl font-bold text-primary text-center mb-12">Les prestations</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Droit Fiscal */}
             <div className="bg-white shadow-md border border-gray-200 p-8 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1 text-center">
               {/* <img src="/icons/fiscalite.svg" alt="Droit Fiscal" className="w-16 mx-auto mb-4" /> */}
-              <h3 className="text-2xl font-semibold text-primary">Droit Fiscal</h3>
+              <h3 className="text-2xl font-semibold text-primary">Droit fiscal</h3>
               <p className="mt-3 text-gray-600">
                 Optimisation fiscale, déclarations et contentieux fiscaux pour entreprises et particuliers.
               </p>
@@ -68,7 +68,7 @@ export default function HomePage() {
             {/* Droit des Affaires */}
             <div className="bg-white shadow-md border border-gray-200 p-8 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1 text-center">
               {/* <img src="/icons/affaires.svg" alt="Droit des Affaires" className="w-16 mx-auto mb-4" /> */}
-              <h3 className="text-2xl font-semibold text-primary">Droit des Affaires</h3>
+              <h3 className="text-2xl font-semibold text-primary">Droit des affaires</h3>
               <p className="mt-3 text-gray-600">
                 Accompagnement dans la création d’entreprise, contrats et litiges commerciaux.
               </p>
@@ -80,7 +80,7 @@ export default function HomePage() {
             {/* Transactions Immobilières */}
             <div className="bg-white shadow-md border border-gray-200 p-8 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1 text-center">
               {/* <img src="/icons/immobilier.svg" alt="Transactions Immobilières" className="w-16 mx-auto mb-4" /> */}
-              <h3 className="text-2xl font-semibold text-primary">Transactions Immobilières</h3>
+              <h3 className="text-2xl font-semibold text-primary">Transactions immobilières</h3>
               <p className="mt-3 text-gray-600">
                 Sécurisation des transactions immobilières et accompagnement juridique.
               </p>

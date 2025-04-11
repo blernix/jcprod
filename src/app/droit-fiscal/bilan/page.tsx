@@ -46,7 +46,7 @@ export default function BilanPatrimonialSuccessoralPage() {
             Le <strong>bilan patrimonial et successoral</strong> est une étape essentielle pour anticiper l&rsquo;avenir et assurer la pérennité de votre patrimoine familial.
             Il permet d’établir une stratégie adaptée à votre situation, en prenant en compte vos objectifs, votre environnement fiscal et vos contraintes personnelles.
           </p>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-lg text-gray-700">
             Le <strong>Cabinet Mérieux</strong> vous accompagne avec rigueur et confidentialité dans cette démarche de conseil sur mesure.
           </p>
         </section>
@@ -54,7 +54,7 @@ export default function BilanPatrimonialSuccessoralPage() {
         {/* Services en Bilan Patrimonial et Successoral */}
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-primary text-center">Nos Services en Bilan Patrimonial & Successoral</h2>
-
+          <div className="w-44 border-t border-gray-300 mt-11 mx-auto"></div>
           {/* Analyse patrimoniale globale */}
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Analyse Patrimoniale Globale</h3>

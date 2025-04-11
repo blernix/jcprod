@@ -48,7 +48,7 @@ export default function DroitFiscalPage() {
             Le <strong>droit fiscal</strong> regroupe l&rsquo;ensemble des règles encadrant l&rsquo;imposition des particuliers et des entreprises.
             Il permet d&rsquo;assurer une gestion optimale de la fiscalité, tout en respectant les obligations légales.
           </p>
-          <p className="mt-4 text-gray-700 text-center">
+          <p className="mt-4 text-lg text-gray-700 text-center">
             Le Cabinet Mérieux vous accompagne dans tous les aspects du droit fiscal, que ce soit pour
             <strong> optimiser votre fiscalité</strong>, <strong>gérer un contentieux</strong> ou <strong>assurer la conformité de votre entreprise</strong>.
           </p>

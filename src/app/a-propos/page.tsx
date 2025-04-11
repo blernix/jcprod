@@ -33,7 +33,7 @@ export default function AboutPage() {
   
 
       <main className="container mx-auto p-6">
-        {/* Photo de Maître MériéUX */}
+        {/* Photo de Maître Mérieux */}
 <div className="flex justify-center mt-6">
   <Image
     src="/jeanClaude.jpeg"
@@ -78,7 +78,7 @@ export default function AboutPage() {
 
         {/* Spécialisation et domaines d'intervention */}
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-center">Expertise et Domaines d&rsquo;Intervention</h2>
+          <h2 className="text-2xl font-semibold text-primary text-center">Expertise et domaines d&rsquo;intervention</h2>
           <p className="mt-4 text-center">
             Aujourd’hui, Maître MÉRIEUX exerce sa profession d’avocat <strong>inscrit au tableau de l’Ordre des Avocats de Melun</strong>. Il intervient principalement en :
           </p>
@@ -95,7 +95,7 @@ export default function AboutPage() {
 
         {/* Transactions immobilières */}
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-center">Transactions Immobilières</h2>
+          <h2 className="text-2xl font-semibold text-primary text-center">Transactions immobilières</h2>
           <p className="mt-4 text-center">
             En tant qu&rsquo;<strong>adhérent du réseau « Marché Immobilier des Avocats » (M.I.A)</strong>, Maître MÉRIEUX accompagne ses clients dans leurs <strong>projets immobiliers</strong>.
           </p>

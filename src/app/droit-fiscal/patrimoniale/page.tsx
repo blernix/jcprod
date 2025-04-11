@@ -35,7 +35,7 @@ export default function FiscalitePatrimonialePage() {
           {/* Header personnalisé */}
                <PageHeader
                 title="Fiscalité Patrimoniale"
-                subtitle="Maîtrisez la fiscalité avec l'expertise du Cabinet Mérieux"
+                subtitle="Optimisez votre fiscalité grâce au Cabinet Mérieux"
                 imageSrc="/header/fiscalite-patrimoniale.jpg"
               />
       <main className="container mx-auto p-6">
@@ -46,7 +46,7 @@ export default function FiscalitePatrimonialePage() {
             La <strong>fiscalité patrimoniale</strong> régit la gestion et la transmission du patrimoine des particuliers et des entreprises.
             Une bonne stratégie permet d&rsquo;optimiser la fiscalité et d’anticiper les obligations légales.
           </p>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-lg text-gray-700">
             Le <strong>Cabinet Mérieux</strong> vous accompagne dans la structuration de votre patrimoine, la transmission de vos actifs et la régularisation fiscale.
           </p>
         </section>

@@ -164,7 +164,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden focus:outline-none"
+            className="md:hidden focus:outline-none text-2xl"
           >
             ☰
           </button>

@@ -42,11 +42,11 @@ const rdvOptions = [
 
 export default function RdvCards() {
   return (
-    <section className="mt-12">
+    <section className="mt-12 text-justify">
        {/* Ligne de séparation subtile */}
        <div className="border-t border-gray-300 mt-11 mb-11"></div>
-      <h2 className="text-3xl font-semibold text-primary text-center">Prendre Rendez-vous</h2>
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+      <h2 className="text-3xl font-semibold text-primary text-center">Prendre rendez-vous</h2>
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 text-center">
         {rdvOptions.map((rdv, index) => (
           <div 
             key={index} 
