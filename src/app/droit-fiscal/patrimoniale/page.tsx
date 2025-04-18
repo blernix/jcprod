@@ -36,7 +36,7 @@ export default function FiscalitePatrimonialePage() {
                <PageHeader
                 title="Fiscalité Patrimoniale"
                 subtitle="Optimisez votre fiscalité grâce au Cabinet Mérieux"
-                imageSrc="/header/fiscalite-patrimoniale.jpg"
+                imageSrc="/header/droit-affaire.jpg"
               />
       <main className="container mx-auto p-6">
         {/* En-tête */}
