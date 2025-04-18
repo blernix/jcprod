@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "./components/PageHeader";
 import RdvCards from "./components/RdvCards";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Cabinet Mérieux – Avocat en droit fiscal & des affaires",
@@ -39,7 +40,12 @@ export default function HomePage() {
       />
 
       <main className="container mx-auto px-6 py-12 space-y-16">
-        
+          <div className="mt-6 md:mt-0 flex items-center justify-center gap-4">
+                  <Image src="/logo_avocat.png" alt="Logo Avocats" width={80} height={80} priority />
+                  <Image src="/logo.png" alt="Logo Client" width={280} height={280} priority />
+                    <Image src="/logo_immo.png" alt="Logo Immobilier" width={100} height={100} priority />
+                  
+                </div>
         {/* Section Expertise */}
         <section className="text-center">
           <h2 className="text-4xl font-bold text-primary">Une expertise à votre service</h2>

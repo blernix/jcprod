@@ -54,11 +54,11 @@ export default function ActualitesPage() {
                 <div className="flex flex-col flex-grow">
                   <h2 className="text-md font-semibold text-primary">{article.title}</h2>
                   <p className="mt-2 text-gray-700 text-sm">{article.pubDate || "Date inconnue"}</p>
-                  <p className="mt-4 text-gray-600 overflow-hidden text-ellipsis h-16">
-                    {article.description.length > 150
-                      ? article.description.substring(0, 150) + "..."
-                      : article.description}
-                  </p>
+                  <p className="mt-4 text-gray-600 text-sm">
+  {article.description
+    ? article.description.split(" ").slice(0, 30).join(" ") + "..."
+    : ""}
+</p>
                 </div>
 
                 <Link

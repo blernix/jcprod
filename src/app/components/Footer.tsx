@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-light py-8 mt-10">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+<footer className="bg-gray-100 text-black py-8 mt-10 shadow-inner shadow-gray-300">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         {/* Informations du cabinet */}
         <div className="text-center md:text-left">
           <h2 className="text-lg font-semibold">Cabinet Mérieux</h2>
@@ -42,7 +42,7 @@ export default function Footer() {
            {/* Section Logos */}
            <div className="mt-6 md:mt-0 flex:col items-center justify-center gap-4">
           <Image src="/logo_avocat.png" alt="Logo Avocats" width={80} height={80} priority />
-          <Image src="/logo.png" alt="Logo Client" width={130} height={130} priority />
+          <Image src="/logo.png" alt="Logo Client" width={180} height={180} priority />
             <Image src="/logo_immo.png" alt="Logo Immobilier" width={100} height={100} priority />
           
         </div>

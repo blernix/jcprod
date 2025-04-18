@@ -1,7 +1,6 @@
 "use client";
 import { useState, useRef } from "react";
 import Link from "next/link";
-import LogoCarousel from "./LogoCarrousel";
 
 export default function Navbar() {
   const [isFiscalOpen, setIsFiscalOpen] = useState(false);
@@ -95,7 +94,7 @@ export default function Navbar() {
         <div className="w-full h-full flex justify-between items-center">
           {/* Logo + Nom */}
           <div className="flex items-center gap-2">
-            <LogoCarousel />
+            
             <Link href="/" className="text-md font-semibold whitespace-nowrap">
               Cabinet Mérieux
             </Link>
