@@ -40,12 +40,32 @@ export default function HomePage() {
       />
 
       <main className="container mx-auto px-6 py-12 space-y-16">
-          <div className="mt-6 md:mt-0 flex items-center justify-center gap-4">
-                  <Image src="/logo_avocat.png" alt="Logo Avocats" width={80} height={80} priority />
-                  <Image src="/logo.png" alt="Logo Client" width={280} height={280} priority />
-                    <Image src="/logo_immo.png" alt="Logo Immobilier" width={100} height={100} priority />
-                  
-                </div>
+      <div className="mt-6 md:mt-0 flex flex-wrap justify-center items-center gap-4">
+  <Image
+    src="/logo_avocat.png"
+    alt="Logo Avocats"
+    width={80}
+    height={80}
+    className="max-w-[80px] h-auto"
+    priority
+  />
+  <Image
+    src="/logo.png"
+    alt="Logo Client"
+    width={180}
+    height={180}
+    className="max-w-[180px] h-auto"
+    priority
+  />
+  <Image
+    src="/logo_immo.png"
+    alt="Logo Immobilier"
+    width={100}
+    height={100}
+    className="max-w-[100px] h-auto"
+    priority
+  />
+</div>
         {/* Section Expertise */}
         <section className="text-center">
           <h2 className="text-4xl font-bold text-primary">Une expertise à votre service</h2>
