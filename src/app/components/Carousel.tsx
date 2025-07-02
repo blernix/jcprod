@@ -8,15 +8,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const images = [
-  "/immo/allee.jpg",
-  "/immo/salon.jpg",
-  "/immo/salon2.jpg",
-  "/immo/cuisine.jpg",
-  "/immo/chambre1.jpg",
-  "/immo/chambre2.jpg",
-  "/immo/salledebain.jpg",
-  "/immo/jardin1.jpg",
-  "/immo/jardin2.jpg"
+  "/immo/exterieur.png",
+  "/immo/salon.png",
+  "/immo/chambre1.png",
+  "/immo/chambre2.png",
+  "/immo/salledeau.png",
+  "/immo/cuisine.png"
+  
 ];
 
 export default function Carousel() {
