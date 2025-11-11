@@ -48,6 +48,7 @@ export default function HomePage() {
     height={80}
     className="max-w-[80px] h-auto"
     priority
+    unoptimized = {true} 
   />
   <Image
     src="/logo.png"
@@ -56,6 +57,7 @@ export default function HomePage() {
     height={180}
     className="max-w-[180px] h-auto"
     priority
+    unoptimized = {true} 
   />
   <Image
     src="/logo_immo.png"
@@ -64,6 +66,7 @@ export default function HomePage() {
     height={100}
     className="max-w-[100px] h-auto"
     priority
+    unoptimized = {true} 
   />
 </div>
         {/* Section Expertise */}

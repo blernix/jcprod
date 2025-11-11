@@ -53,9 +53,20 @@ export default function Footer() {
           <p>
             <Link href="/mentions-legales" className="hover:text-secondary">Mentions légales</Link> | <Link href="/confidentialite" className="hover:text-secondary">Politique de confidentialité</Link>
           </p>
+          <p className="mt-2 text-gray-600">
+            Site réalisé par l&rsquo;agence{" "}
+            <Link
+              href="https://killian-lecrut.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-secondary hover:underline"
+            >
+              Killian Lecrut
+            </Link>
+          </p>
         </div>
 
-       
+
       </div>
     </footer>
   );

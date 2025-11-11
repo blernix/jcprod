@@ -19,6 +19,8 @@ export default function PageHeader({ title, subtitle, imageSrc, clientImageSrc }
   fill // ✅ Remplace `layout="fill"`
   className="brightness-75 object-cover" // ✅ Remplace `objectFit="cover"`
   priority
+  sizes="100vw"
+  quality={85}
 />
 
       {/* Contenu superposé */}
