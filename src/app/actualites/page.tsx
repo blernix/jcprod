@@ -40,7 +40,7 @@ export default function ActualitesPage() {
       <main className="container mx-auto p-6">
         <h1 className="text-4xl font-bold text-primary text-center">Actualités Juridiques</h1>
         <p className="mt-4 text-lg text-gray-700 text-center">
-          Retrouvez les dernières mises à jour et articles de la base Lextenso.
+          Retrouvez les dernières actualités juridiques en droit fiscal, droit des affaires et droit social.
         </p>
 
         {/* Affichage des articles */}
