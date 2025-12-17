@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Droit commercial & économique | Cabinet Mérieux",
     description: "Maître Jean-Claude Mérieux conseille les entreprises en droit commercial et économique : contrats, négociations, baux commerciaux, distribution, concurrence.",
-    url: "https://cabinet-merieux.fr/droit-affaires/commercial",
+    url: "https://cabinet-merieux.com/droit-affaires/commercial",
     type: "article",
   },
   twitter: {

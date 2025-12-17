@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 
@@ -15,11 +16,12 @@ export const metadata: Metadata = {
     "baux commerciaux",
     "contrats d'affaires"
   ],
+  alternates: generateCanonical('/droit-affaires'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "Droit des affaires | Cabinet Mérieux",
     description: "Conseil et assistance en droit des affaires : droit des sociétés, droit commercial, négociation et contrats.",
-    url: "https://cabinet-merieux.fr/droit-affaires",
+    url: "https://cabinet-merieux.com/droit-affaires",
     type: "article",
     images: ["/logometa.jpeg"],
   },

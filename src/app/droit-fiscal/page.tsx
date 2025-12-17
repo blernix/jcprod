@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 
@@ -13,11 +14,12 @@ export const metadata: Metadata = {
     "fiscalité immobilière",
     "contentieux fiscaux"
   ],
+  alternates: generateCanonical('/droit-fiscal'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "Droit fiscal | Cabinet Mérieux",
     description: "Expertise en fiscalité des entreprises, patrimoine, immobilier et contentieux fiscaux.",
-    url: "https://cabinet-merieux.fr/droit-fiscal",
+    url: "https://cabinet-merieux.com/droit-fiscal",
     type: "article",
     images: ["/logometa.jpeg"],
   },

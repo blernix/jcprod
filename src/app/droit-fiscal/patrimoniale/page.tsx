@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fiscalité patrimoniale | Cabinet Mérieux",
     description: "Conseil en optimisation fiscale, gestion de patrimoine et transmission.",
-    url: "https://cabinet-merieux.fr/droit-fiscal/patrimoniale",
+    url: "https://cabinet-merieux.com/droit-fiscal/patrimoniale",
     type: "article",
     images: ["/logometa.jpeg"],
   },

@@ -1,21 +1,23 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import RdvCards from "../components/RdvCards";
+import { generateCanonical } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Contact | Cabinet Mérieux – Avocat en droit fiscal",
   description: "Contactez le Cabinet Mérieux pour toute question juridique en droit fiscal, droit des affaires et droit social.",
   keywords: ["contact avocat", "cabinet Mérieux", "avocat fiscaliste", "droit des affaires"],
+  alternates: generateCanonical('/contact'),
   openGraph: {
     title: "Contact | Cabinet Mérieux – Avocat en droit fiscal",
-    description: "Besoin d’un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mérieux.",
-    url: "https://cabinet-merieux.fr/contact",
+    description: "Besoin d'un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mérieux.",
+    url: "https://cabinet-merieux.com/contact",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact | Cabinet Mérieux – Avocat en droit fiscal",
-    description: "Besoin d’un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mérieux.",
+    description: "Besoin d'un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mérieux.",
   },
 };
 

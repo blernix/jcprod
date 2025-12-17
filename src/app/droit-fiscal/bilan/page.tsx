@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bilan patrimonial & successoral | Cabinet Mérieux",
     description: "Anticipez la transmission de votre patrimoine grâce à un accompagnement juridique et fiscal sur mesure.",
-    url: "https://cabinet-merieux.fr/bilan",
+    url: "https://cabinet-merieux.com/bilan",
     type: "article",
     images: ["/logometa.jpeg"],
   },

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Droit des sociétés | Cabinet Mérieux",
     description: "Accompagnement juridique des entreprises en droit des sociétés : constitution, gouvernance, fusion, liquidation.",
-    url: "https://cabinet-merieux.fr/droit-affaires/societes",
+    url: "https://cabinet-merieux.com/droit-affaires/societes",
     type: "article",
   },
   twitter: {

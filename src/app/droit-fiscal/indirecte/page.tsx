@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fiscalité indirecte | Cabinet Mérieux",
     description: "Conseil en TVA, gestion des droits d'enregistrement et taxes indirectes.",
-    url: "https://cabinet-merieux.fr/droit-fiscal/indirecte",
+    url: "https://cabinet-merieux.com/droit-fiscal/indirecte",
     type: "article",
     images: ["/logometa.jpeg"],
   },

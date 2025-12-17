@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contrôle et contentieux fiscaux | Cabinet Mérieux",
     description: "Accompagnement en contrôle fiscal et défense en cas de contentieux avec l'administration fiscale.",
-    url: "https://cabinet-merieux.fr/droit-fiscal/contentieux",
+    url: "https://cabinet-merieux.com/droit-fiscal/contentieux",
     type: "article",
     images: ["/logometa.jpeg"],
   },

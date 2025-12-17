@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-
 import Link from "next/link";
 import PageHeader from "./components/PageHeader";
 import RdvCards from "./components/RdvCards";
 import Image from "next/image";
+import { generateCanonical } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Cabinet Mérieux – Avocat en droit fiscal & des affaires",
   description: "Le Cabinet Mérieux, situé à La Rochette (77), vous accompagne en droit fiscal, droit des affaires et transactions immobilières.",
   keywords: ["avocat fiscaliste", "droit fiscal", "droit des affaires", "transactions immobilières", "avocat La Rochette"],
   authors: [{ name: "Cabinet Mérieux" }],
+  alternates: generateCanonical(''),
   openGraph: {
     title: "Cabinet Mérieux – Avocat en droit fiscal & des affaires",
     description: "Maître Jean-Claude MÉRIEUX vous accompagne en droit fiscal, droit des affaires et transactions immobilières.",
-    url: "https://cabinet-merieux.fr",
+    url: "https://cabinet-merieux.com",
     type: "website",
     images: ["/logometa.jpeg"],
   },

@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "id": "t3-montrouge",
+      "slug": "t3-montrouge",
+      "title": "T3 – Quartier Jean-Jaurès, Montrouge",
+      "type": "T3",
+      "surface": 65,
+      "location": "Montrouge",
+      "price": "Sur demande",
+      "available": true,
+      "images": [
+        "/immo/exterieur.png",
+        "/immo/salon.png",
+        "/immo/chambre1.png",
+        "/immo/chambre2.png",
+        "/immo/salledeau.png",
+        "/immo/cuisine.png"
+      ],
+      "shortDescription": "Appartement de 65 m² à usage d'habitation ou professionnel, en plein cœur du quartier calme Jean-Jaurès.",
+      "description": "Venez découvrir cet appartement de 3 pièces situé au rez-de-chaussée d'un immeuble sécurisé avec gardien, en plein cœur du quartier calme et dynamique Jean-Jaurès, à proximité immédiate des commerces, écoles et transports en commun (métro, bus).\n\nIl offre une entrée, un séjour, une cuisine, deux chambres donnant sur des espaces verts, une salle de bain, un WC séparé avec lave-mains et de nombreux placards de rangement.",
+      "features": [
+        "Jardin privatif d'environ 6,5 m²",
+        "Parking inclus",
+        "Cave",
+        "Ancien cabinet médical, encore équipé",
+        "Convient à une famille, un professionnel libéral ou une personne à mobilité réduite"
+      ]
+    }
+  ]
+}

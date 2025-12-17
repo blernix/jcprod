@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rupture conventionnelle | Cabinet Mérieux",
     description: "Comprendre les règles de la rupture conventionnelle et ses recours possibles.",
-    url: "https://cabinet-merieux.fr/droit-social/rupture-conventionnelle",
+    url: "https://cabinet-merieux.com/droit-social/rupture-conventionnelle",
     type: "article",
   },
   twitter: {

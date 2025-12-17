@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Licenciement | Cabinet Mérieux",
     description: "Comprendre les règles du licenciement et les obligations légales des employeurs.",
-    url: "https://cabinet-merieux.fr/droit-social/licenciement",
+    url: "https://cabinet-merieux.com/droit-social/licenciement",
     type: "article",
   },
   twitter: {

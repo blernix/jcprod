@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 
@@ -13,11 +14,12 @@ export const metadata: Metadata = {
     "droit du travail",
     "avocat entreprise"
   ],
+  alternates: generateCanonical('/droit-social'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "Droit social | Cabinet Mérieux",
     description: "Accompagnement juridique en droit social : licenciements, ruptures conventionnelles et protection des salariés.",
-    url: "https://cabinet-merieux.fr/droit-social",
+    url: "https://cabinet-merieux.com/droit-social",
     type: "article",
   },
   twitter: {

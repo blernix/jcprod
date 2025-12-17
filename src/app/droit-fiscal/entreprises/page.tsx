@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fiscalité des entreprises | Cabinet Mérieux",
     description: "Accompagnement en optimisation fiscale, gestion des déficits et contentieux fiscaux pour les entreprises.",
-    url: "https://cabinet-merieux.fr/droit-fiscal/entreprises",
+    url: "https://cabinet-merieux.com/droit-fiscal/entreprises",
     type: "article",
     images: ["/logometa.jpeg"],
   },

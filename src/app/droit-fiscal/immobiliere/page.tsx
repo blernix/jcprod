@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fiscalité immobilière | Cabinet Mérieux",
     description: "Accompagnement en structuration fiscale pour l'immobilier, gestion des acquisitions et cessions, et optimisation des investissements immobiliers.",
-    url: "https://cabinet-merieux.fr/droit-fiscal/immobiliere",
+    url: "https://cabinet-merieux.com/droit-fiscal/immobiliere",
     type: "article",
     images: ["/logometa.jpeg"],
   },

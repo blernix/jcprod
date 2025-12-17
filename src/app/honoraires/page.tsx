@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import RdvCards from "../components/RdvCards";
 
 
@@ -12,11 +13,12 @@ export const metadata: Metadata = {
     "facturation avocat",
     "Cabinet Mérieux"
   ],
+  alternates: generateCanonical('/honoraires'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "Honoraires | Cabinet Mérieux – Transparence et tarification",
     description: "Découvrez la tarification du Cabinet Mérieux, proposant des honoraires adaptés aux besoins des clients.",
-    url: "https://cabinet-merieux.fr/honoraires",
+    url: "https://cabinet-merieux.com/honoraires",
     type: "article",
     images: ["/logometa.jpeg"],
   },

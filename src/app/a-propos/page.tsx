@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import Image from "next/image";
 
 
@@ -12,11 +13,12 @@ export const metadata: Metadata = {
     "droit des affaires",
     "avocat La Rochette"
   ],
+  alternates: generateCanonical('/a-propos'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "À propos | Cabinet Mérieux – Avocat en droit fiscal",
     description: "Découvrez le parcours et l'expertise de Maître Jean-Claude Mérieux, avocat en droit fiscal et des affaires.",
-    url: "https://cabinet-merieux.fr/a-propos",
+    url: "https://cabinet-merieux.com/a-propos",
     type: "article",
     images: ["/logometa.jpeg"],
   },
