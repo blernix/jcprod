@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
+import Link from "next/link";
 import PageHeader from "@/app/components/PageHeader";
 
 
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
     "défense fiscale",
     "litiges fiscaux"
   ],
-  authors: [{ name: "Cabinet Mérieux" }],
+  alternates: generateCanonical('/droit-fiscal/contentieux'),
   openGraph: {
     title: "Contrôle et contentieux fiscaux | Cabinet Mérieux",
     description: "Accompagnement en contrôle fiscal et défense en cas de contentieux avec l'administration fiscale.",
@@ -33,9 +35,9 @@ export default function ContentieuxFiscauxPage() {
     <>
  
          <PageHeader
-                      title="Fiscalité Indirect"
-                      subtitle="Défendez efficacement vos intérêts avec l'expertise du Cabinet Mérieux"
-                      imageSrc="/header/fiscalite-indirect.jpg"
+                      title="Contrôle et Contentieux Fiscaux"
+                      subtitle="Défendez efficacement vos intérêts avec l&rsquo;expertise du Cabinet Mérieux"
+                      imageSrc="/header/fiscalite.jpg"
                     />
       <main className="container mx-auto p-6">
         {/* En-tête */}
@@ -99,9 +101,9 @@ export default function ContentieuxFiscauxPage() {
 
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
-          <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
+          <Link href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
             Contactez-moi
-          </a>
+          </Link>
         </div>
       </main>
     </>

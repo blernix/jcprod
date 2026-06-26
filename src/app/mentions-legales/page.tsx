@@ -1,13 +1,28 @@
-import Head from "next/head";
+import type { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
+
+export const metadata: Metadata = {
+  title: "Mentions Légales | Cabinet Mérieux",
+  description: "Mentions légales du Cabinet Mérieux, avocat à La Rochette.",
+  alternates: generateCanonical('/mentions-legales'),
+  openGraph: {
+    title: "Mentions Légales | Cabinet Mérieux",
+    description: "Mentions légales du Cabinet Mérieux, avocat à La Rochette.",
+    url: "https://cabinet-merieux.com/mentions-legales",
+    type: "website",
+    images: ["/logometa.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mentions Légales | Cabinet Mérieux",
+    description: "Mentions légales du Cabinet Mérieux, avocat à La Rochette.",
+    images: ["/logometa.jpeg"],
+  },
+};
 
 export default function MentionsLegalesPage() {
   return (
     <>
-      <Head>
-        <title>Mentions Légales | Cabinet Mériéux</title>
-        <meta name="description" content="Mentions légales du Cabinet Mériéux, avocat à La Rochette." />
-      </Head>
-
       <main className="container mx-auto p-6">
         <h1 className="text-4xl font-bold text-primary text-center">Mentions Légales</h1>
 

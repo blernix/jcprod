@@ -67,7 +67,7 @@ export default function Navbar() {
     items: { name: string; href: string }[];
   }) => (
     <li className="relative z-20" onMouseEnter={onOpen} onMouseLeave={onClose}>
-      <Link href={link} className="hover:text-secondary flex items-center gap-1">
+      <Link href={link} className="hover:text-secondary flex items-center gap-1" aria-haspopup="true" aria-expanded={isOpen}>
         {label} ▾
       </Link>
       {isOpen && (
@@ -164,6 +164,8 @@ export default function Navbar() {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden focus:outline-none text-2xl"
+            aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             ☰
           </button>

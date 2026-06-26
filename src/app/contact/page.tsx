@@ -13,11 +13,13 @@ export const metadata: Metadata = {
     description: "Besoin d'un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mérieux.",
     url: "https://cabinet-merieux.com/contact",
     type: "website",
+    images: ["/logometa.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact | Cabinet Mérieux – Avocat en droit fiscal",
     description: "Besoin d'un avocat en droit fiscal ou droit des affaires ? Contactez Maître Jean-Claude Mérieux.",
+    images: ["/logometa.jpeg"],
   },
 };
 

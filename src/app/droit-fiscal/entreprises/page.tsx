@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
+import Link from "next/link";
 import PageHeader from "@/app/components/PageHeader";
 
 
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
     "stratégie fiscale",
     "contentieux fiscal"
   ],
-  authors: [{ name: "Cabinet Mérieux" }],
+  alternates: generateCanonical('/droit-fiscal/entreprises'),
   openGraph: {
     title: "Fiscalité des entreprises | Cabinet Mérieux",
     description: "Accompagnement en optimisation fiscale, gestion des déficits et contentieux fiscaux pour les entreprises.",
@@ -74,7 +76,7 @@ export default function FiscaliteEntreprisesPage() {
           <div className="mt-8 bg-light shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold text-primary text-center">Fiscalité transactionnelle</h3>
             <p className="mt-2 text-gray-700">
-              Je vous accompagnons dans la structuration et l’optimisation des opérations d’acquisition et de cession d’entreprises.
+              Je vous accompagne dans la structuration et l’optimisation des opérations d’acquisition et de cession d’entreprises.
             </p>
             <ul className="mt-4 list-disc list-inside">
               <li>Audit et revue fiscale d’acquisition ou de cession</li>
@@ -101,9 +103,9 @@ export default function FiscaliteEntreprisesPage() {
 
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
-          <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
+          <Link href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
             Contactez-moi
-          </a>
+          </Link>
         </div>
       </main>
     </>

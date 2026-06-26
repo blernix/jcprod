@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import PageHeader from "@/app/components/PageHeader";
 
 export const metadata: Metadata = {
@@ -12,17 +13,20 @@ export const metadata: Metadata = {
     "baux commerciaux",
     "propriété intellectuelle",
   ],
+  alternates: generateCanonical('/droit-affaires/commercial'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "Droit commercial & économique | Cabinet Mérieux",
     description: "Maître Jean-Claude Mérieux conseille les entreprises en droit commercial et économique : contrats, négociations, baux commerciaux, distribution, concurrence.",
     url: "https://cabinet-merieux.com/droit-affaires/commercial",
     type: "article",
+    images: ["/logometa.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Droit commercial & économique | Cabinet Mérieux",
     description: "Le Cabinet Mérieux accompagne les entreprises en droit commercial et économique.",
+    images: ["/logometa.jpeg"],
   },
 };
 

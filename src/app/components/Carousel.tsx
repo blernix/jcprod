@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 
 interface CarouselProps {
   images?: string[];
+  alts?: string[];
   onImageClick?: (index: number) => void;
 }
 
@@ -21,7 +22,7 @@ const defaultImages = [
   "/immo/cuisine.png"
 ];
 
-export default function Carousel({ images = defaultImages, onImageClick }: CarouselProps) {
+export default function Carousel({ images = defaultImages, alts, onImageClick }: CarouselProps) {
   return (
     <div className="w-full max-w-3xl mx-auto">
       <Swiper
@@ -40,9 +41,10 @@ export default function Carousel({ images = defaultImages, onImageClick }: Carou
             >
               <Image
                 src={src}
-                alt={`Image ${index + 1}`}
+                alt={alts?.[index] || `Photo ${index + 1}`}
                 fill
                 className="object-cover rounded-lg"
+                sizes="(max-width: 768px) 100vw, 80vw"
               />
             </div>
           </SwiperSlide>

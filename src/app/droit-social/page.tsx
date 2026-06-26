@@ -21,11 +21,13 @@ export const metadata: Metadata = {
     description: "Accompagnement juridique en droit social : licenciements, ruptures conventionnelles et protection des salariés.",
     url: "https://cabinet-merieux.com/droit-social",
     type: "article",
+    images: ["/logometa.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Droit social | Cabinet Mérieux",
     description: "Le Cabinet Mérieux vous conseille sur le droit du travail et les litiges employeur-salarié.",
+    images: ["/logometa.jpeg"],
   },
 };
 export default function DroitSocialPage() {

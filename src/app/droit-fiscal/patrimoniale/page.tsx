@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
+import Link from "next/link";
 import PageHeader from "@/app/components/PageHeader";
 
 
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
     "donation",
     "succession"
   ],
-  authors: [{ name: "Cabinet Mérieux" }],
+  alternates: generateCanonical('/droit-fiscal/patrimoniale'),
   openGraph: {
     title: "Fiscalité patrimoniale | Cabinet Mérieux",
     description: "Conseil en optimisation fiscale, gestion de patrimoine et transmission.",
@@ -100,9 +102,9 @@ export default function FiscalitePatrimonialePage() {
 
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
-          <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
+          <Link href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
             Contactez-moi
-          </a>
+          </Link>
         </div>
       </main>
     </>

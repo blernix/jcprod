@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/confidentialite',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
     changeFrequency: route === '' || route === '/actualites' || route === '/immobilier'
       ? 'weekly' as const
       : 'monthly' as const,
@@ -33,7 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/droit-fiscal/bilan',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: route === '/droit-fiscal' ? 0.9 : 0.8,
   }));
@@ -45,7 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/droit-affaires/commercial',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: route === '/droit-affaires' ? 0.9 : 0.8,
   }));
@@ -57,7 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/droit-social/rupture-conventionnelle',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: route === '/droit-social' ? 0.9 : 0.8,
   }));

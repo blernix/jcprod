@@ -99,7 +99,7 @@ export default function PropertyDetail({ params }: { params: Promise<{ slug: str
 
         {/* Carousel */}
         <section className="mt-8">
-          <Carousel images={property.images} onImageClick={handleImageClick} />
+          <Carousel images={property.images} alts={property.images.map(() => property.title)} onImageClick={handleImageClick} />
           <p className="text-sm text-gray-500 text-center mt-2">Cliquez sur une image pour agrandir</p>
         </section>
 

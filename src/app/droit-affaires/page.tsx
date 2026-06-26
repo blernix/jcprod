@@ -84,9 +84,9 @@ export default function DroitAffairesPage() {
 
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
-          <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
+          <Link href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
             Contactez-moi
-          </a>
+          </Link>
         </div>
       </main>
     </>

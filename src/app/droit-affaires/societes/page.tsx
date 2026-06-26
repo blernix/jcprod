@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import PageHeader from "@/app/components/PageHeader";
 
 
@@ -16,17 +17,20 @@ export const metadata: Metadata = {
     "pacte d’actionnaires",
     "cession de titres"
   ],
+  alternates: generateCanonical('/droit-affaires/societes'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "Droit des sociétés | Cabinet Mérieux",
     description: "Accompagnement juridique des entreprises en droit des sociétés : constitution, gouvernance, fusion, liquidation.",
     url: "https://cabinet-merieux.com/droit-affaires/societes",
     type: "article",
+    images: ["/logometa.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Droit des sociétés | Cabinet Mérieux",
     description: "Le Cabinet Mérieux vous accompagne tout au long de la vie de votre société : création, fusion, cession, gouvernance.",
+    images: ["/logometa.jpeg"],
   },
 };
 

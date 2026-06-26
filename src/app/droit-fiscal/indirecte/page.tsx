@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
+import Link from "next/link";
 import PageHeader from "@/app/components/PageHeader";
 
 
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
     "avocat fiscaliste",
     "optimisation fiscale"
   ],
-  authors: [{ name: "Cabinet Mérieux" }],
+  alternates: generateCanonical('/droit-fiscal/indirecte'),
   openGraph: {
     title: "Fiscalité indirecte | Cabinet Mérieux",
     description: "Conseil en TVA, gestion des droits d'enregistrement et taxes indirectes.",
@@ -99,9 +101,9 @@ export default function FiscaliteIndirectePage() {
 
         {/* CTA vers contact */}
         <div className="mt-12 text-center">
-          <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
+          <Link href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
             Contactez-moi
-          </a>
+          </Link>
         </div>
       </main>
     </>

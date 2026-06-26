@@ -40,7 +40,7 @@ export default function PageHeader({ title, subtitle, imageSrc, clientImageSrc }
   >
         <Image
   src={clientImageSrc}
-  alt="Avocat"
+          alt={title}
   width={300}
   height={300}
   className="object-cover shadow-lg"

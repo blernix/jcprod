@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import PageHeader from "@/app/components/PageHeader";
 
 
@@ -14,17 +15,20 @@ export const metadata: Metadata = {
     "reclassement",
     "droit du travail"
   ],
+  alternates: generateCanonical('/droit-social/licenciement'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "Licenciement | Cabinet Mérieux",
     description: "Comprendre les règles du licenciement et les obligations légales des employeurs.",
     url: "https://cabinet-merieux.com/droit-social/licenciement",
     type: "article",
+    images: ["/logometa.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Licenciement | Cabinet Mérieux",
     description: "Comprendre les règles du licenciement et les obligations légales des employeurs.",
+    images: ["/logometa.jpeg"],
   },
 };
 export default function LicenciementPage() {

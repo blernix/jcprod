@@ -41,9 +41,9 @@ export default function Footer() {
 
            {/* Section Logos */}
            <div className="mt-6 md:mt-0 flex:col items-center justify-center gap-4">
-          <Image src="/logo_avocat.png" alt="Logo Avocats" width={80} height={80} priority />
-          <Image src="/logo.png" alt="Logo Client" width={180} height={180} priority />
-            <Image src="/logo_immo.png" alt="Logo Immobilier" width={100} height={100} priority />
+          <Image src="/logo_avocat.png" alt="Logo Avocats" width={80} height={80} />
+          <Image src="/logo.png" alt="Logo Client" width={180} height={180} />
+            <Image src="/logo_immo.png" alt="Logo Immobilier" width={100} height={100} />
           
         </div>
 

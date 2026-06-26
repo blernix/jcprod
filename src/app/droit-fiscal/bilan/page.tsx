@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
+import Link from "next/link";
 import PageHeader from "@/app/components/PageHeader";
 
 
@@ -13,11 +15,11 @@ export const metadata: Metadata = {
     "gestion du patrimoine",
     "optimisation successorale"
   ],
-  authors: [{ name: "Cabinet Mérieux" }],
+  alternates: generateCanonical('/droit-fiscal/bilan'),
   openGraph: {
     title: "Bilan patrimonial & successoral | Cabinet Mérieux",
     description: "Anticipez la transmission de votre patrimoine grâce à un accompagnement juridique et fiscal sur mesure.",
-    url: "https://cabinet-merieux.com/bilan",
+    url: "https://cabinet-merieux.com/droit-fiscal/bilan",
     type: "article",
     images: ["/logometa.jpeg"],
   },
@@ -97,9 +99,9 @@ export default function BilanPatrimonialSuccessoralPage() {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <a href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
+          <Link href="/contact" className="bg-secondary text-white px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">
             Contactez-moi
-          </a>
+          </Link>
         </div>
       </main>
     </>

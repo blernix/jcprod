@@ -1,6 +1,4 @@
-'use client';
-
-export default function StructuredData() {
+ export default function StructuredData() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -78,7 +76,7 @@ export default function StructuredData() {
               }
             },
             {
-              '@type': 'Service',
+              '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
                 name: 'Droit social',

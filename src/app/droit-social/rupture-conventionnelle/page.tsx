@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { generateCanonical } from "@/lib/metadata";
 import PageHeader from "@/app/components/PageHeader";
 
 
@@ -13,17 +14,20 @@ export const metadata: Metadata = {
     "accord employeur salarié",
     "indemnités"
   ],
+  alternates: generateCanonical('/droit-social/rupture-conventionnelle'),
   authors: [{ name: "Cabinet Mérieux" }],
   openGraph: {
     title: "Rupture conventionnelle | Cabinet Mérieux",
     description: "Comprendre les règles de la rupture conventionnelle et ses recours possibles.",
     url: "https://cabinet-merieux.com/droit-social/rupture-conventionnelle",
     type: "article",
+    images: ["/logometa.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Rupture conventionnelle | Cabinet Mérieux",
     description: "Comprendre les règles de la rupture conventionnelle et ses recours possibles.",
+    images: ["/logometa.jpeg"],
   },
 };
 export default function RuptureConventionnellePage() {
