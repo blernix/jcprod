@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  serverActions: false,
   poweredByHeader: false,
   images: {
     formats: ['image/webp', 'image/avif'],
